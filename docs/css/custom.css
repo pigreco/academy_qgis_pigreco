@@ -1,0 +1,159 @@
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-small {
+    width: 25%; /* Imposta la larghezza al 25% del contenitore */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+}
+
+.img-medium {
+    width: 50%; /* Imposta la larghezza al 50% del contenitore */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+}
+
+.img-large {
+    width: 75%; /* Imposta la larghezza al 75% del contenitore */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+}
+
+.img-10 {
+    width: 10%;
+    height: auto;
+}
+
+.img-20 {
+    width: 20%;
+    height: auto;
+}
+
+.img-30 {
+    width: 30%;
+    height: auto;
+}
+
+.img-40 {
+    width: 40%;
+    height: auto;
+}
+
+.img-50 {
+    width: 50%;
+    height: auto;
+}
+
+.img-60 {
+    width: 60%;
+    height: auto;
+    #border: 5px solid rgba(85, 182, 85, 0.795); /* Aggiunge un bordo nero di 2px */
+    #border-radius: 50px;
+}
+
+.img-70 {
+    width: 70%;
+    height: auto;
+}
+
+.img-80 {
+    width: 80%;
+    height: auto;
+}
+
+.img-90 {
+    width: 90%;
+    height: auto;
+}
+
+.img-100 {
+    width: 100%;
+    height: auto;
+}
+
+ul, ol {
+    line-height: 1.1; /* Modifica questo valore per l'interlinea desiderata */
+}
+
+/* Effetti sulle tab di navigazione */
+.md-tabs__link {
+    transition: all 0.3s ease;
+}
+
+.md-tabs__link:hover {
+    font-weight: bold !important;
+    transform: translateY(-5px); /* Leggero movimento verso l'alto */
+    text-shadow: 0 2px 4px rgb(0, 0, 0); /* Ombra del testo */
+/*    color: var(--md-primary-fg-color) !important; /* Cambia colore */
+}
+
+/* Effetto underline animato */
+.md-tabs__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--md-accent-fg-color);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.md-tabs__link:hover::after {
+    width: 80%;
+}
+
+/* Effetti sui pulsanti e link del contenuto */
+.md-content a {
+    transition: all 0.2s ease;
+}
+
+.md-content a:hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Effetto sui titoli dei capitoli nella sidebar */
+.md-nav__link {
+    transition: all 0.2s ease;
+}
+
+.md-nav__link:hover {
+    transform: translateX(5px);
+    color: var(--md-accent-fg-color) !important;
+}
+
+/* Effetto pulsazione sui bottoni */
+.md-button {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Effetto zoom sulle immagini */
+.md-content img {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.md-content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Effetto gradiente sui box di avviso */
+.admonition {
+    background: linear-gradient(135deg, var(--md-admonition-bg-color), rgba(255,255,255,0.05));
+    transition: transform 0.2s ease;
+}
+
+.admonition:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}

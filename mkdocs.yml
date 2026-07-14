@@ -1,0 +1,229 @@
+site_name: Academy QGIS by pigreco
+site_author: Salvatore Fiandaca
+site_url: ""
+
+use_directory_urls: false
+
+# Copyright
+copyright: <b>Ing. Salvatore Fiandaca</b> | 2026 | <a href="https://pigrecoinfinito.com//" target="_self" title="Chi Siamo" >About</a>
+
+theme:
+  name: material
+  language: it
+  font:
+    text: "Ubuntu"  # Font per il testo
+    code: "Courier"  # Font per il codice
+  icon:
+    logo: simple/qgis
+    annotation: material/star-four-points-circle
+  favicon: imgs/logo_pigrecoinfinito.png
+
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch in nero
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch in bianco
+    
+  features:
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.share
+    - navigation.footer
+    - toc.follow
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+
+
+## Page tree
+nav:
+  - Home: index.md
+  - Intro: intro.md
+  - Capitoli Corso Base:
+    - Breve Introduzione: capitoli/corso_base/010_breve_intro.md
+    - QGIS 4 - Cosa sapere: capitoli/corso_base/QGIS4_COSA_SAPERE.md
+    - Installazione: capitoli/corso_base/020_installazione.md
+    - Profili: capitoli/corso_base/025_profili.md
+    - Interfaccia: capitoli/corso_base/030_interfaccia.md
+    - Plugin: capitoli/corso_base/060_plugin.md
+    - Formati di dato geografici: capitoli/corso_base/065_formati_dati.md
+    - VETTORI:
+      - Vestizione: capitoli/corso_base/071_vettori_proprieta.md
+      - Tabella Attributi: capitoli/corso_base/072_vettori_tabella_attributi.md
+      - CAD: capitoli/corso_base/073_vettori_CAD.md
+      - Motore Espressioni: capitoli/corso_base/074_vettori_field_calc.md
+    - GeoDB: capitoli/corso_base/080_geodb.md
+    - Servizi Web: capitoli/corso_base/090_servizi_web.md
+    - Gestione Foto Geotag: capitoli/corso_base/100_gestione_foto_geotag.md
+    - Google Earth KMZ: capitoli/corso_base/110_ge_kmz.md
+    - RASTER:
+      - Analisi: capitoli/corso_base/121_raster_analisi.md
+      - DTM e DSM: capitoli/corso_base/122_dtm_dsm.md
+      - Migliorare la visualizzazione: capitoli/corso_base/122_migliorare_visualizzazione.md
+      - Georeferenziatore: capitoli/corso_base/123_georeferenziatore.md
+ #     - Cenni Telerilevamento: capitoli/corso_base/124_cenni_telerilevamento.md
+#   - Time Manager: capitoli/corso_base/130_timeManager.md
+#   - 3D: capitoli/corso_base/140_3D.md
+    - STAMPA:
+      - Introduzione: capitoli/corso_base/150_stampa_intro.md
+      - Layout: capitoli/corso_base/151_stampa_layout.md
+      - Atlante: capitoli/corso_base/152_stampa_atlante.md
+      - Stampa: capitoli/corso_base/153_stampa_stampe.md
+      - Stampa in serie: capitoli/corso_base/155_stampe_in_serie.md
+    - Comunità QGIS: capitoli/corso_base/160_comunita_qgis.md
+    - Certificazioni e Contributi: capitoli/corso_base/165_contributi_qgis.md
+  - Capitoli Corso Avanzato:
+    - Motore espressioni: 
+      - Field Calc: capitoli/corso_avanzato/01_motore_espressioni/01_field_calc.md
+      - Tabella degli attributi: capitoli/corso_avanzato/01_motore_espressioni/02_tabella_attributi.md
+      - Funzioni Core: capitoli/corso_avanzato/01_motore_espressioni/03_funzioni_core.md
+      - Funzioni Custom: capitoli/corso_avanzato/01_motore_espressioni/04_funzioni_personalizzate.md
+      - Selezione: capitoli/corso_avanzato/01_motore_espressioni/05_selezione_x_espressione.md
+    - Stampa avanzata: 
+      - Atlanti con Grafici: capitoli/corso_avanzato/02_compositore_stampe/02_stampe_in_serie.md
+      - Atlanti e variabili: capitoli/corso_avanzato/02_compositore_stampe/03_stampe_in_serie_variabili.md
+    - Strumenti di Processing: 
+      - Introduzione: capitoli/corso_avanzato/03_strumenti_di_processing/00_introduzione.md
+      - Toolbox: capitoli/corso_avanzato/03_strumenti_di_processing/01_toolbox.md
+      - Model Builder: capitoli/corso_avanzato/03_strumenti_di_processing/02_modellatore_grafico.md
+      - Storico: capitoli/corso_avanzato/03_strumenti_di_processing/03_storico.md
+      - Esecuzione in serie: capitoli/corso_avanzato/03_strumenti_di_processing/04_esecuzione_in_serie.md
+      - Esempi strumenti: capitoli/corso_avanzato/03_strumenti_di_processing/05_quadro_sinottico.md
+    - Varie:
+      - Moduli data entry: capitoli/corso_avanzato/04_varie/01_moduli_data_entry.md
+      - Topology: capitoli/corso_avanzato/04_varie/02_topology.md
+      - Cloud AWS S3 IRIDE: capitoli/corso_avanzato/04_varie/03_cloud_aws_s3_iride.md
+      - Stili qml e SLD: capitoli/corso_avanzato/04_varie/04_stili_qml_sld.md
+      - gdalinfo processing: capitoli/corso_avanzato/04_varie/05_gdalinfo_processing.md
+#  - Capitoli Corso AI:
+#    - Introduzione all'AI: capitoli/corso_ai/010_intro_ai.md
+#    - Script da Console QGIS: capitoli/corso_ai/020_script_console_qgis.md
+#    - Algoritmi di Processing: capitoli/corso_ai/030_algoritmi_processing.md
+#    - Plugin QGIS: capitoli/corso_ai/040_plugin_qgis.md
+#    - MCP Server: capitoli/corso_ai/050_mcp_server.md
+  - Esercitazioni:
+     - esercitazioni/index.md
+     - VESTIZIONE:
+         - Vettori: esercitazioni/vestizione/es_vestizione_vector.md
+         - Raster: esercitazioni/vestizione/es_vestizione_raster.md
+     - MOTORE ESPRESSIONI:
+         - Primi passi con il field calc: esercitazioni/motore_espressioni/011_es_motore_espressioni.md
+         - Tabella degli attributi: esercitazioni/motore_espressioni/012_es_tabella_attributi.md
+         - Funzioni core: esercitazioni/motore_espressioni/013_es_funzioni_core.md
+         - Funzioni personalizzate: esercitazioni/motore_espressioni/014_es_funzioni_personalizzate.md
+         - Seleziona per espressione: esercitazioni/motore_espressioni/015_es_selezione_x_espressione.md
+     - PRINT LAYOUT:
+         - Stampe primi esempi: esercitazioni/stampa/021_esempi_base_stampa.md
+         - Atlante con grafici: esercitazioni/stampa/022_atlante_grafici.md
+#        - Atlante senza geometria: esercitazioni/stampa/023_atlante_no_geometry.md
+         - Atlante senza geometria: esercitazioni/stampa/023_atlante_senza_geometry.md
+         - Atlante con foto: esercitazioni/stampa/024_atlante_con_foto.md
+         - Atlante nascondere feature: esercitazioni/stampa/025_atlante_nascondere_feature.md
+     - PROCESSING:
+         - Toolbox: esercitazioni/processing/031_toolbox.md
+         - Modellatore grafico: esercitazioni/processing/032_modellatore_grafico.md
+         - Storico: esercitazioni/processing/033_storico.md
+         - Esecuzione in serie: esercitazioni/processing/034_esecuzione_in_serie.md
+     - RASTER:
+          - Curve di livello : esercitazioni/raster/01_curve_di_livello.md
+          - Calcolatore raster: esercitazioni/raster/02_calcolatore_raster.md
+          - Virtual Raster: esercitazioni/raster/03_virtual_raster.md
+     - GEOREFERENZIAZIONE:
+         - Raster: esercitazioni/georeferenziatore/041_raster.md
+         - Vettore: esercitazioni/georeferenziatore/042_vettore.md
+  - Dati:
+    - Dati: dati/index.md
+  - Bibliografia:
+    - Bibliografia: bibliografia/bibliografia.md
+  - Conclusioni: outro.md
+  - Glossario: glossario.md
+  - Historia di QGIS: storia_qgis.md
+  - FAQ: faq.md
+
+
+
+plugins:
+- search
+- social
+# with-pdf
+# print-site
+- glightbox:
+       touchNavigation: true
+       loop: false
+       effect: zoom
+       slide_effect: slide
+       width: 100%
+       height: auto
+       zoomable: true
+       draggable: true
+       skip_classes:
+         - custom-skip-class-name
+         - no-lightbox
+       auto_caption: false
+       caption_position: bottom
+       background: white
+       shadow: true
+
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - footnotes
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.caret
+  - tables
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - toc:
+      permalink: true
+  - markdown_include.include:
+      base_path: docs 
+
+extra_javascript:
+  - javascripts/varie.js
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - css/custom.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  - css/animations.css
+
+## Social Media
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.uno/@pigreco71
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/pigrecoinfinito
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@pigrecoinfinito
+    - icon: fontawesome/brands/github
+      link: https://github.com/pigreco
+    - icon: simple/qgis
+      link: https://www.qgis.org/community/contributors/supporting/#:~:text=Salvatore%20Fiandaca
