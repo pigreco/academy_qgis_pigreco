@@ -18,7 +18,7 @@ I dati per l'esercitazione sono nella cartella _**material didattico extra**_, c
 
 sotto il risultato atteso - gif animata
 
-![](../../imgs/cap_16/pagine/atlante_foto.gif)
+![](../../imgs/evolution.png)
 
 ## Cosa occorre
 

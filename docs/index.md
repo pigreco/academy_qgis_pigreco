@@ -58,7 +58,7 @@ QGIS è mantenuto da una comunità di sviluppatori che pubblicano aggiornamenti 
 ![](./imgs/foss4g2021firenze.png){.img-10 align=left}
 
 conosciuto come _Pigrecoinfinito_ o semplicemente _pigreco_, è una figura di spicco nel mondo della divulgazione geomatica in Italia. Nato il 29 maggio a Charleroi (Belgio), **Fiandaca** ha sviluppato fin da giovane una passione per la geomatica, che lo ha portato a laurearsi in ingegneria Civile con specializzazione in Geomatica all'Università degli Studi di Palermo.
-Il soprannome "_Pigrecoinfinito_" deriva dal suo amore per il numero π (pi greco), simbolo della sua dedizione alla matematica e alla costante ricerca di conoscenza. **Fiandaca** è noto per la sua capacità di rendere accessibili concetti complessi attraverso [i suoi video educativi su YouTube](https://www.youtube.com/@pigrecoinfinito), dove il suo canale "_Pigrecoinfinito_" ha guadagnato un ampio seguito. _Technical Advisor_ presso _Pigrecoinfinito Italia_ (SBU Government & Security) dal 2022.
+Il soprannome "_Pigrecoinfinito_" deriva dal suo amore per il numero π (pi greco), simbolo della sua dedizione alla matematica e alla costante ricerca di conoscenza. **Fiandaca** è noto per la sua capacità di rendere accessibili concetti complessi attraverso [i suoi video educativi su YouTube](https://www.youtube.com/@pigrecoinfinito), dove il suo canale "_Pigrecoinfinito_" ha guadagnato un ampio seguito. _Technical Advisor_ presso _Pigrecoinfinito Italia_ (SBU Government & Security) dal 2022. Dal 2026 ha il QGIS Certification.
 
 [:material-open-in-new: Vai al sito Pigrecoinfinito](https://pigrecoinfinito.com/){ .md-button } [:material-open-in-new: Vai al canale YouTube Pigrecoinfinito](https://www.youtube.com/@pigrecoinfinito){ .md-button }
 

@@ -71,7 +71,7 @@ In questo esempio georeferenzieremo un PDF che contiene informazioni su una Cart
 
 ![](../../imgs/a_05_georeferenziatore/IST_davinci.png){.center-img .img-70}
 
-![](../../imgs/a_05_georeferenziatore/ITIS.gif){.center-img .img-50}
+![](../../imgs/evolution.png){.center-img .img-50}
 
 L'immagine è un ritaglio modificato dell'area dell'**ITIS Leonardo Da Vinci di Pisa**, EPSG:3857
 
@@ -107,6 +107,6 @@ L'immagine è un ritaglio modificato dell'area dell'**ITIS Leonardo Da Vinci di 
 
 ---
 
-![](../../imgs/a_05_georeferenziatore/verifica2.png){.center-img .img-80}
+![](../../imgs/evolution.png){.center-img .img-80}
 
 {!includes/disclaimer.md!}

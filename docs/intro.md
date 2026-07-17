@@ -125,7 +125,7 @@ Monte ore: :clock3: **24 h** (1)
 ## Organizzato da Pigrecoinfinito
 
 <div align="center">
-   <a href="https://pigrecoinfinito.com/"><img src="./imgs/logo_pigrecoinfinito.png" width="250" title="Pigrecoinfinito"></a>
+   <a href="https://pigrecoinfinito.com/"><img src="./imgs/certification.svg" width="400" title="Pigrecoinfinito"></a>
 </div>
 
 ## Docente :material-account-check:
@@ -133,7 +133,7 @@ Monte ore: :clock3: **24 h** (1)
 - **Ing. Salvatore FIANDACA** <br>(Membro [OpenDataSicilia](http://opendatasicilia.it/) (2014) , Membro [QGIS Italia](http://qgis.it/) (2015), Socio [GFOSS.it APS](https://gfoss.it/) (2017), Membro [QGIS organization](https://github.com/qgis) (2020), Technical Advisor [Planetek](https://www.planetek.it/) (2022))
 
 <div align="center">
-   <a href=""><img src="./imgs/logo_lungo_pk.png" width="750" title="Ing. Salvatore FIANDACA"></a>
+   <a href=""><img src="./imgs/certification.svg" width="250" title="Ing. Salvatore FIANDACA"></a>
 </div>
 
 ## Calendario :material-calendar:

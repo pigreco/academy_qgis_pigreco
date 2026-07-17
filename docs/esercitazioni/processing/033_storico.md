@@ -10,7 +10,7 @@ description: Cronologia processing
 
 ## Esempio pratico
 
-![](../../imgs/processing/es_storico.gif)
+![](../../imgs/evolution.png)
 
 
 {!includes/disclaimer.md!}

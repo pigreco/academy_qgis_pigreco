@@ -53,7 +53,7 @@ description: Stampe semplici con il compositore di stampe
 ### Atlanti
 
 #### Es1 Dati ISTAT
-![](../../../imgs/cap_01/webp-net-gifmaker.gif)
+![](../../../imgs/evolution.png)
 
 Fonte: <https://pigrecoinfinito.com/2017/07/09/qgis-atlas-con-pseudo-vettori-di-copertura/>
 
@@ -76,10 +76,10 @@ blog post: <https://pigrecoinfinito.com/2019/11/08/qgis-e-i-grafici-dinamici-nel
 Fonte: <https://pigrecoinfinito.com/2020/04/24/qgis-creare-un-atlas-inconsueto/>
 
 #### Es6 Mappatura e censimento Pubblica illuminazione
-![](../../../imgs/cap_01/atlas1.gif)
+![](../../../imgs/evolution.png)
 
 #### Es7 Mappatura e censimento Pubblica illuminazione
-![](../../../imgs/cap_01/atlas2.gif)
+![](../../../imgs/evolution.png)
 
 ## Interfaccia compositore di stampe
 

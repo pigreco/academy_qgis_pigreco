@@ -96,6 +96,6 @@ Estrae info dal WMS Catasto AdE
 
 === "Esempio applicato"
 
-    ![](../../imgs/field_calc/get_parcel_info.gif)
+    ![](../../imgs/evolution.png)
 
 {!includes/disclaimer.md!}

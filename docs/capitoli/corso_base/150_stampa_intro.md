@@ -75,7 +75,7 @@ Il compositore di stampe offre funzionalità di layout e stampa in serie. Consen
 
 #### Dati ISTAT
 
-![](../../imgs/cap_01/webp-net-gifmaker.gif){.center-img .img-80}
+![](../../imgs/evolution.png){.center-img .img-80}
 
 Fonte: <https://pigrecoinfinito.com/2017/07/09/qgis-atlas-con-pseudo-vettori-di-copertura/>
 
@@ -97,9 +97,9 @@ Fonte: <https://pigrecoinfinito.com/2020/04/24/qgis-creare-un-atlas-inconsueto/>
 
 #### Mappatura e censimento Pubblica illuminazione
 
-![](../../imgs/cap_01/atlas1.gif){.center-img .img-80}
+![](../../imgs/evolution.png){.center-img .img-80}
 
-![](../../imgs/cap_01/atlas2.gif){.center-img .img-60}
+![](../../imgs/evolution.png){.center-img .img-60}
 
 ## Interfaccia Print Layout
 

@@ -31,7 +31,7 @@ La _Barra degli Strumenti di Selezione_ è attivabile dal menu **Visualizza | Ba
 
 === "seleziona per posizione o entro una distanza"
 
-    ![](../../../imgs/selezione/selezione_posizione.gif){.center-img .img-70}
+    ![](../../../imgs/evolution.png){.center-img .img-70}
 
 ## fare esempi pratici su QGIS
 
