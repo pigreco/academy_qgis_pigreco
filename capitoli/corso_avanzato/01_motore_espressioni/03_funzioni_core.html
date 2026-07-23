@@ -3636,16 +3636,16 @@
 <li><a href="https://hfcqgis.opendatasicilia.it/gr_funzioni/geometria/geometria_unico/#transform"><code>transform</code></a>;</li>
 </ul>
 <p>... e altre ancora, per calcolo angoli, azimuth, perimetro, lunghezze, aree ecc...</p>
-<p>Le funzioni <strong>geometriche</strong> sono fortemente legate al <strong>SR</strong> (Sistema di Riferimento), quindi occorre aver chiaro la differenza tra i vari <strong>SR</strong> (Geografici, Proiettati). Inoltre alcune funzioni ($area, $length) dipendono dalla configurazione del progetto <strong>QGIS</strong>, cioè dipendono da come vengono impostate le proprietà del progetto: Menu <code>Progetto | Proprietà | Generale | Misure</code> qui è possibile settare le unità di misura, il datum (ellissoide), quindi in generale:</p>
+<p>Le funzioni <strong>geometriche</strong> sono fortemente legate al <strong>SR</strong> (Sistema di Riferimento), quindi occorre aver chiaro la differenza tra i vari <strong>SR</strong> (Geografici, Proiettati). Inoltre alcune funzioni (<code>$area</code>, <code>$length</code>) dipendono dalla configurazione del progetto <strong>QGIS</strong>, cioè dipendono da come vengono impostate le proprietà del progetto: Menu <code>Progetto | Proprietà | Generale | Misure</code> qui è possibile settare le unità di misura, il datum (ellissoide), quindi in generale:</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <ul>
-<li><span class="arithmatex">\(area[^1] &lt;&gt; Area(\)</span>geometry)<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
-<li><span class="arithmatex">\(length[^3] &lt;&gt; length (\)</span>geometry)<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></li>
+<li><code>$area</code><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> &lt;&gt; <code>Area($geometry)</code><sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
+<li><code>$length</code><sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup> &lt;&gt; <code>length($geometry)</code><sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></li>
 </ul>
 </div>
 <p><a class="glightbox" href="../../../imgs/field_calc/img_02.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../../imgs/field_calc/img_02.png" /></a></p>
-<p><a href="https://pigrecoinfinito.wordpress.com/2018/09/05/qgis-e-la-funzione-length/">Blog post</a> su $length</p>
+<p><a href="https://pigrecoinfinito.wordpress.com/2018/09/05/qgis-e-la-funzione-length/">Blog post</a> su <code>$length</code></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Per evitare brutte sorprese è consigliabile leggere sempre la definizione delle funzione.</p>
