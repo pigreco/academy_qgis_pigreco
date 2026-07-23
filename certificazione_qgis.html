@@ -1,0 +1,3728 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Il programma di certificazione ufficiale di QGIS.org - come funziona, chi può rilasciare i certificati e come verificarli">
+      
+      
+        <meta name="author" content="Salvatore Fiandaca">
+      
+      
+        <link rel="canonical" href="https://pigreco.github.io/academy_qgis_pigreco/certificazione_qgis.html">
+      
+      
+        <link rel="prev" href="intro.html">
+      
+      
+        <link rel="next" href="capitoli/corso_base/010_breve_intro.html">
+      
+      
+      <link rel="icon" href="imgs/logo_pigrecoinfinito.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
+    
+    
+      
+        <title>Certificazione QGIS - Academy QGIS by pigreco</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.66ac8b77.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.17 2.76A10.1 10.1 0 0 1 12 2c1.31 0 2.61.26 3.83.76 1.21.5 2.31 1.24 3.24 2.17.93.93 1.67 2.03 2.17 3.24.5 1.22.76 2.52.76 3.83 0 2.65-1.05 5.2-2.93 7.07A9.974 9.974 0 0 1 12 22a10.1 10.1 0 0 1-3.83-.76 9.975 9.975 0 0 1-3.24-2.17A9.974 9.974 0 0 1 2 12c0-2.65 1.05-5.2 2.93-7.07.93-.93 2.03-1.67 3.24-2.17M12 17l1.56-3.42L17 12l-3.44-1.56L12 7l-1.57 3.44L7 12l3.43 1.58L12 17Z"/></svg>');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CCourier:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"Courier"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="css/custom.css">
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="css/animations.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Certificazione QGIS - Academy QGIS by pigreco" >
+      
+        <meta  property="og:description"  content="Il programma di certificazione ufficiale di QGIS.org - come funziona, chi può rilasciare i certificati e come verificarli" >
+      
+        <meta  property="og:image"  content="https://pigreco.github.io/academy_qgis_pigreco/assets/images/social/certificazione_qgis.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://pigreco.github.io/academy_qgis_pigreco/certificazione_qgis.html" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Certificazione QGIS - Academy QGIS by pigreco" >
+      
+        <meta  name="twitter:description"  content="Il programma di certificazione ufficiale di QGIS.org - come funziona, chi può rilasciare i certificati e come verificarli" >
+      
+        <meta  name="twitter:image"  content="https://pigreco.github.io/academy_qgis_pigreco/assets/images/social/certificazione_qgis.png" >
+      
+    
+    
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#certificazione-qgis" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="index.html" title="Academy QGIS by pigreco" class="md-header__button md-logo" aria-label="Academy QGIS by pigreco" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.879 13.006v3.65l-3.004-3.048v-3.495h3.582l2.852 2.893h-3.43zm10.886 7.606V24h-3.654l-5.73-5.9v-3.55h3.354l6.03 6.062zm-10.828-1.448 3.372 3.371c-1.309.442-2.557.726-4.325.726C5.136 23.26 0 18.243 0 11.565 0 4.92 5.136 0 11.984 0 18.864 0 24 4.952 24 11.565c0 2.12-.523 4.076-1.457 5.759l-3.625-3.725a8.393 8.393 0 0 0 .24-2.005c0-4.291-3.148-7.527-7.1-7.527-3.954 0-7.248 3.236-7.248 7.527s3.33 7.6 7.247 7.6c.548 0 .661.017.88-.03z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Academy QGIS by pigreco
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Certificazione QGIS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch in nero"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch in nero" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch in bianco"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch in bianco" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Condividi" aria-label="Condividi" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="intro.html" class="md-tabs__link">
+        
+  
+    
+  
+  Intro
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="certificazione_qgis.html" class="md-tabs__link">
+        
+  
+    
+  
+  Certificazione QGIS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="capitoli/corso_base/010_breve_intro.html" class="md-tabs__link">
+          
+  
+    
+  
+  Capitoli Corso Base
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="capitoli/corso_avanzato/01_motore_espressioni/01_field_calc.html" class="md-tabs__link">
+          
+  
+    
+  
+  Capitoli Corso Avanzato
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="esercitazioni/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  Esercitazioni
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="dati/index.html" class="md-tabs__link">
+          
+  
+    
+  
+  Dati
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="bibliografia/bibliografia.html" class="md-tabs__link">
+          
+  
+    
+  
+  Bibliografia
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="outro.html" class="md-tabs__link">
+        
+  
+    
+  
+  Conclusioni
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="glossario.html" class="md-tabs__link">
+        
+  
+    
+  
+  Glossario
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="storia_qgis.html" class="md-tabs__link">
+        
+  
+    
+  
+  Historia di QGIS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="faq.html" class="md-tabs__link">
+        
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Academy QGIS by pigreco" class="md-nav__button md-logo" aria-label="Academy QGIS by pigreco" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.879 13.006v3.65l-3.004-3.048v-3.495h3.582l2.852 2.893h-3.43zm10.886 7.606V24h-3.654l-5.73-5.9v-3.55h3.354l6.03 6.062zm-10.828-1.448 3.372 3.371c-1.309.442-2.557.726-4.325.726C5.136 23.26 0 18.243 0 11.565 0 4.92 5.136 0 11.984 0 18.864 0 24 4.952 24 11.565c0 2.12-.523 4.076-1.457 5.759l-3.625-3.725a8.393 8.393 0 0 0 .24-2.005c0-4.291-3.148-7.527-7.1-7.527-3.954 0-7.248 3.236-7.248 7.527s3.33 7.6 7.247 7.6c.548 0 .661.017.88-.03z"/></svg>
+
+    </a>
+    Academy QGIS by pigreco
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Certificazione QGIS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="certificazione_qgis.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Certificazione QGIS
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#perche-esiste" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perché esiste
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#il-modello-web-of-trust" class="md-nav__link">
+    <span class="md-ellipsis">
+      Il modello "web of trust"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#come-si-diventa-organizzazione-certificata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Come si diventa organizzazione certificata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#costo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Costo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trovare-corsi-e-organizzazioni-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trovare corsi e organizzazioni certificate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#approfondimenti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approfondimenti
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#il-percorso-di-pigrecoinfinito" class="md-nav__link">
+    <span class="md-ellipsis">
+      Il percorso di Pigrecoinfinito
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Capitoli Corso Base
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Capitoli Corso Base
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/010_breve_intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Breve Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/QGIS4_COSA_SAPERE.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    QGIS 4 - Cosa sapere
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/020_installazione.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Installazione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/025_profili.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Profili
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/030_interfaccia.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Interfaccia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/060_plugin.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Plugin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/065_formati_dati.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Formati di dato geografici
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_8" id="__nav_4_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    VETTORI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_8">
+            <span class="md-nav__icon md-icon"></span>
+            VETTORI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/071_vettori_proprieta.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vestizione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/072_vettori_tabella_attributi.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tabella Attributi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/073_vettori_CAD.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CAD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/074_vettori_field_calc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Motore Espressioni
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/080_geodb.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GeoDB
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/090_servizi_web.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Servizi Web
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/100_gestione_foto_geotag.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gestione Foto Geotag
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/110_ge_kmz.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Google Earth KMZ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_13" id="__nav_4_13_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    RASTER
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_13">
+            <span class="md-nav__icon md-icon"></span>
+            RASTER
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/121_raster_analisi.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Analisi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/122_dtm_dsm.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DTM e DSM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/122_migliorare_visualizzazione.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Migliorare la visualizzazione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/123_georeferenziatore.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Georeferenziatore
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/140_3D.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3D
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_15" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_15" id="__nav_4_15_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    STAMPA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_15">
+            <span class="md-nav__icon md-icon"></span>
+            STAMPA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/150_stampa_intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/151_stampa_layout.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layout
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/152_stampa_atlante.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atlante
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/153_stampa_stampe.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stampa
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/155_stampe_in_serie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stampa in serie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_base/160_comunita_qgis.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Comunità QGIS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Capitoli Corso Avanzato
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Capitoli Corso Avanzato
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Motore espressioni
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            Motore espressioni
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/01_motore_espressioni/01_field_calc.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Field Calc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/01_motore_espressioni/02_tabella_attributi.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tabella degli attributi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/01_motore_espressioni/03_funzioni_core.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Funzioni Core
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/01_motore_espressioni/04_funzioni_personalizzate.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Funzioni Custom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/01_motore_espressioni/05_selezione_x_espressione.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Selezione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Stampa avanzata
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Stampa avanzata
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/02_compositore_stampe/02_stampe_in_serie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atlanti con Grafici
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/02_compositore_stampe/03_stampe_in_serie_variabili.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atlanti e variabili
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Strumenti di Processing
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Strumenti di Processing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/03_strumenti_di_processing/00_introduzione.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduzione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/03_strumenti_di_processing/01_toolbox.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toolbox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/03_strumenti_di_processing/02_modellatore_grafico.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Model Builder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/03_strumenti_di_processing/03_storico.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storico
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/03_strumenti_di_processing/04_esecuzione_in_serie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Esecuzione in serie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/03_strumenti_di_processing/05_quadro_sinottico.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Esempi strumenti
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Varie
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Varie
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/04_varie/01_moduli_data_entry.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Moduli data entry
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/04_varie/02_topology.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Topology
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/04_varie/03_cloud_aws_s3_iride.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cloud AWS S3 IRIDE
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/04_varie/04_stili_qml_sld.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stili qml e SLD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="capitoli/corso_avanzato/04_varie/05_gdalinfo_processing.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    gdalinfo processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="esercitazioni/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Esercitazioni
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Esercitazioni
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    VESTIZIONE
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            VESTIZIONE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/vestizione/es_vestizione_vector.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vettori
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/vestizione/es_vestizione_raster.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Raster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    MOTORE ESPRESSIONI
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            MOTORE ESPRESSIONI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/motore_espressioni/011_es_motore_espressioni.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Primi passi con il field calc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/motore_espressioni/012_es_tabella_attributi.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tabella degli attributi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/motore_espressioni/013_es_funzioni_core.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Funzioni core
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/motore_espressioni/014_es_funzioni_personalizzate.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Funzioni personalizzate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/motore_espressioni/015_es_selezione_x_espressione.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Seleziona per espressione
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PRINT LAYOUT
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            PRINT LAYOUT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/stampa/021_esempi_base_stampa.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Stampe primi esempi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/stampa/022_atlante_grafici.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atlante con grafici
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/stampa/024_atlante_con_foto.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atlante con foto
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/stampa/025_atlante_nascondere_feature.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Atlante nascondere feature
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PROCESSING
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            PROCESSING
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/processing/031_toolbox.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toolbox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/processing/032_modellatore_grafico.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Modellatore grafico
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/processing/033_storico.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storico
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/processing/034_esecuzione_in_serie.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Esecuzione in serie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    RASTER
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            RASTER
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/raster/01_curve_di_livello.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Curve di livello
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/raster/02_calcolatore_raster.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calcolatore raster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/raster/03_virtual_raster.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Virtual Raster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_7" id="__nav_6_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GEOREFERENZIAZIONE
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_7">
+            <span class="md-nav__icon md-icon"></span>
+            GEOREFERENZIAZIONE
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/georeferenziatore/041_raster.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Raster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="esercitazioni/georeferenziatore/042_vettore.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vettore
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="dati/index.html" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Dati
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Dati
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Bibliografia
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Bibliografia
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bibliografia/bibliografia.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bibliografia
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="outro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Conclusioni
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="glossario.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossario
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="storia_qgis.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Historia di QGIS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FAQ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#perche-esiste" class="md-nav__link">
+    <span class="md-ellipsis">
+      Perché esiste
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#il-modello-web-of-trust" class="md-nav__link">
+    <span class="md-ellipsis">
+      Il modello "web of trust"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#come-si-diventa-organizzazione-certificata" class="md-nav__link">
+    <span class="md-ellipsis">
+      Come si diventa organizzazione certificata
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#costo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Costo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trovare-corsi-e-organizzazioni-certificate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trovare corsi e organizzazioni certificate
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#approfondimenti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Approfondimenti
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#il-percorso-di-pigrecoinfinito" class="md-nav__link">
+    <span class="md-ellipsis">
+      Il percorso di Pigrecoinfinito
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="certificazione-qgis">Certificazione QGIS <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.879 13.006v3.65l-3.004-3.048v-3.495h3.582l2.852 2.893h-3.43zm10.886 7.606V24h-3.654l-5.73-5.9v-3.55h3.354l6.03 6.062zm-10.828-1.448 3.372 3.371c-1.309.442-2.557.726-4.325.726C5.136 23.26 0 18.243 0 11.565 0 4.92 5.136 0 11.984 0 18.864 0 24 4.952 24 11.565c0 2.12-.523 4.076-1.457 5.759l-3.625-3.725a8.393 8.393 0 0 0 .24-2.005c0-4.291-3.148-7.527-7.1-7.527-3.954 0-7.248 3.236-7.248 7.527s3.33 7.6 7.247 7.6c.548 0 .661.017.88-.03z"/></svg></span><a class="headerlink" href="#certificazione-qgis" title="Permanent link">&para;</a></h1>
+<p>Il <strong>QGIS Certification Programme</strong> è il programma ufficiale con cui <a href="https://www.qgis.org/">QGIS.org</a> consente ad organizzazioni accreditate di rilasciare un <strong>certificato ufficiale QGIS</strong> ai partecipanti dei propri corsi, workshop e sessioni di formazione.</p>
+<div class="admonition info">
+<p class="admonition-title">In sintesi</p>
+<ul>
+<li>Il certificato è rilasciato <strong>da un'organizzazione certificata</strong>, non direttamente da QGIS.org.</li>
+<li>Ogni certificato emesso versa <strong>20 €</strong> al progetto QGIS.</li>
+<li>Portale del programma: <a href="https://certification.qgis.org/">certification.qgis.org</a></li>
+</ul>
+</div>
+<h2 id="perche-esiste">Perché esiste<a class="headerlink" href="#perche-esiste" title="Permanent link">&para;</a></h2>
+<p>QGIS è un progetto <strong>libero e open source</strong> sostenuto da donazioni e dal lavoro della comunità. Il programma di certificazione persegue due obiettivi:</p>
+<ul>
+<li><strong>Garantire la qualità della formazione</strong>: chi rilascia certificati viene verificato dalla comunità QGIS.</li>
+<li><strong>Finanziare il progetto</strong>: la quota di ogni certificato è una fonte di sostegno diretto allo sviluppo di QGIS.</li>
+</ul>
+<h2 id="il-modello-web-of-trust">Il modello "web of trust"<a class="headerlink" href="#il-modello-web-of-trust" title="Permanent link">&para;</a></h2>
+<p>QGIS.org adotta un approccio a <strong>rete di fiducia</strong> (<em>web of trust</em>): il progetto dedica tempo alla verifica dell'organizzazione richiedente e, una volta accreditata, si fida che questa "faccia la cosa giusta" nell'emissione dei certificati ai propri discenti.</p>
+<p>In altre parole, il controllo è <strong>a monte</strong> — sull'organizzazione — e non su ogni singolo certificato emesso.</p>
+<h2 id="come-si-diventa-organizzazione-certificata">Come si diventa organizzazione certificata<a class="headerlink" href="#come-si-diventa-organizzazione-certificata" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">1. Requisiti</label><label for="__tabbed_1_2">2. Candidatura</label><label for="__tabbed_1_3">3. Struttura</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>L'organizzazione richiedente deve dimostrare un <strong>contributo attivo alla comunità QGIS</strong>, ad esempio tramite:</p>
+<ul>
+<li>sviluppo e commit al codice di QGIS</li>
+<li>contributi alla documentazione ufficiale</li>
+<li>sviluppo e pubblicazione di plugin</li>
+<li>sostegno economico al progetto</li>
+<li>partecipazione al proprio <strong>QGIS User Group</strong> locale</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>La procedura prevede:</p>
+<ul>
+<li>invio del <strong>materiale didattico</strong> (esercitazioni, lezioni, dati) per una revisione di qualità</li>
+<li>valutazione da parte dei <strong>QGIS User Group</strong> locali, di norma entro un mese</li>
+<li>approvazione finale da parte del <strong>Project Steering Committee (PSC)</strong> di QGIS</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Una volta accreditata, l'organizzazione può configurare sul portale:</p>
+<ul>
+<li>uno o più <strong>training center</strong> (le sedi in cui si eroga la formazione)</li>
+<li>i <strong>course type</strong> (le tipologie di corso, con relativo programma)</li>
+<li>i <strong>course convener</strong> (i referenti che organizzano i corsi)</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="costo">Costo<a class="headerlink" href="#costo" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Importo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quota per ogni certificato emesso</td>
+<td><strong>20 €</strong> a favore di QGIS.org</td>
+</tr>
+</tbody>
+</table>
+<p>I pagamenti possono essere effettuati <strong>cumulativamente</strong>, tramite carta di credito o bonifico SEPA.</p>
+<h2 id="trovare-corsi-e-organizzazioni-certificate">Trovare corsi e organizzazioni certificate<a class="headerlink" href="#trovare-corsi-e-organizzazioni-certificate" title="Permanent link">&para;</a></h2>
+<p>Sul portale <a href="https://certification.qgis.org/">certification.qgis.org</a> è possibile:</p>
+<ul>
+<li>consultare l'<a href="https://certification.qgis.org/en/certifyingorganisation/list/">elenco delle organizzazioni certificate</a></li>
+<li>individuare le organizzazioni su <strong>mappa</strong>, per trovare quelle più vicine</li>
+<li>consultare i <strong>corsi in programma</strong> nei sei mesi successivi</li>
+</ul>
+<p>Le tipologie di corso disponibili spaziano dalle competenze GIS di base alla cartografia avanzata, dall'elaborazione di <em>point cloud</em> allo scripting Python, fino al rilievo dati sul campo.</p>
+<div class="admonition warning">
+<p class="admonition-title">Attenzione a non confondere</p>
+<p>La certificazione QGIS <strong>non è un esame individuale</strong> sostenibile autonomamente online: è un attestato legato alla <strong>partecipazione ad un corso</strong> erogato da un'organizzazione accreditata.</p>
+</div>
+<h2 id="approfondimenti">Approfondimenti <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"/></svg></span><a class="headerlink" href="#approfondimenti" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="https://www.qgis.org/community/certification/">Certification Programme <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> — pagina ufficiale su qgis.org</li>
+<li><a href="https://certification.qgis.org/">certification.qgis.org <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> — il portale del programma</li>
+<li><a href="https://certification.qgis.org/en/docs/">Panoramica del programma <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> — documentazione</li>
+<li><a href="https://certification.qgis.org/en/certifyingorganisation/list/">Organizzazioni certificate <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> — elenco completo</li>
+</ul>
+<h2 id="il-percorso-di-pigrecoinfinito">Il percorso di Pigrecoinfinito <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 2.03v2.02c4.39.54 7.5 4.53 6.96 8.92-.46 3.64-3.32 6.53-6.96 6.96v2c5.5-.55 9.5-5.43 8.95-10.93-.45-4.75-4.22-8.5-8.95-8.97m-2 .03c-1.95.19-3.81.94-5.33 2.2L7.1 5.74c1.12-.9 2.47-1.48 3.9-1.68v-2M4.26 5.67A9.885 9.885 0 0 0 2.05 11h2c.19-1.42.75-2.77 1.64-3.9L4.26 5.67M2.06 13c.2 1.96.97 3.81 2.21 5.33l1.42-1.43A8.002 8.002 0 0 1 4.06 13h-2m5.04 5.37-1.43 1.37A9.994 9.994 0 0 0 11 22v-2a8.002 8.002 0 0 1-3.9-1.63M12.5 7v5.25l4.5 2.67-.75 1.23L11 13V7h1.5Z"/></svg></span><a class="headerlink" href="#il-percorso-di-pigrecoinfinito" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="imgs/certification.svg" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" class="center-img img-50" src="imgs/certification.svg" /></a></p>
+<div class="admonition success">
+<p class="admonition-title">Approvazione ottenuta — aggiornato al 23 luglio 2026</p>
+<p><strong>Ing. Salvatore Fiandaca</strong> ha completato con esito positivo l'iter per entrare nel programma di certificazione QGIS come <em>trainer</em>.</p>
+<p>La candidatura è stata sottoposta al voto del <strong>QGIS User Group italiano</strong>, secondo la procedura di valutazione descritta sopra:</p>
+<ul>
+<li><strong>Discussione e voto</strong>: <a href="https://discourse.osgeo.org/t/approvazione-certificazione/154453">Approvazione certificazione <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2Zm6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1Z"/></svg></span></a> — thread aperto da Matteo Ghetta il 14 luglio 2026 su OSGeo Discourse</li>
+<li><strong>Esito del voto</strong>: <strong>61 voti +1</strong> da 59 votanti distinti, <strong>nessun voto contrario</strong> (42 voti già nella prima giornata)</li>
+<li><strong>Scadenza della votazione</strong>: 21 luglio 2026</li>
+<li><strong>Approvazione finale</strong>: ottenuta dal <strong>Project Steering Committee</strong> di QGIS</li>
+</ul>
+<p>L'andamento dei voti nel tempo è riportato nel grafico sottostante.</p>
+</div>
+<style>
+  .viz-root {
+    --surface-1: #fcfcfb;
+    --text-primary: #0b0b0b;
+    --text-secondary: #52514e;
+    --muted: #898781;
+    --grid: #e1e0d9;
+    --axis: #c3c2b7;
+    --series-1: #2a78d6;
+    --series-1-soft: rgba(42,120,214,0.14);
+    --border: rgba(11,11,11,0.10);
+    --good: #006300;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--text-primary);
+    margin: 1.5em 0;
+  }
+  /* segue lo schema scuro (slate) di MkDocs Material */
+  [data-md-color-scheme="slate"] .viz-root {
+    --surface-1: #1a1a19;
+    --text-primary: #ffffff;
+    --text-secondary: #c3c2b7;
+    --muted: #898781;
+    --grid: #2c2c2a;
+    --axis: #383835;
+    --series-1: #3987e5;
+    --series-1-soft: rgba(57,135,229,0.20);
+    --border: rgba(255,255,255,0.10);
+    --good: #0ca30c;
+  }
+  .viz-root .wrap { max-width: 860px; margin: 0 auto; }
+  .viz-root .card {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px 24px 12px;
+  }
+  .viz-root h1 { font-size: 20px; font-weight: 650; margin: 0 0 2px; letter-spacing: -0.01em; color: var(--text-primary) !important; }
+  .viz-root .sub { font-size: 13px; color: var(--text-secondary); margin: 0 0 18px; }
+  .viz-root .stats { display: flex; gap: 28px; flex-wrap: wrap; margin: 0 0 18px; }
+  .viz-root .stat .v { font-size: 30px; font-weight: 680; line-height: 1; letter-spacing: -0.02em; }
+  .viz-root .stat .v.good { color: var(--good); }
+  .viz-root .stat .k { font-size: 12px; color: var(--muted); margin-top: 5px; }
+  .viz-root .chart { position: relative; width: 100%; }
+  .viz-root svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .viz-root .tick { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+  .viz-root .axis-title { fill: var(--text-secondary); font-size: 12px; }
+  .viz-root .end-label { fill: var(--series-1); font-size: 13px; font-weight: 650; }
+  .viz-root .tip {
+    position: absolute; pointer-events: none; opacity: 0;
+    transform: translate(-50%, -115%); transition: opacity .08s;
+    background: var(--surface-1); border: 1px solid var(--border);
+    border-radius: 9px; padding: 7px 10px; font-size: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.14); white-space: nowrap; z-index: 3;
+  }
+  .viz-root .tip .t-user { font-weight: 640; }
+  .viz-root .tip .t-meta { color: var(--text-secondary); margin-top: 2px; }
+  .viz-root .foot { font-size: 11px; color: var(--muted); margin: 14px 2px 4px; }
+</style>
+
+<div class="viz-root">
+  <div class="wrap">
+    <div class="card">
+      <h1>Certificazione QGIS — voti favorevoli nel tempo</h1>
+      <p class="sub">Topic Discourse OSGeo #154453 · votazione proposta da Matteo Ghetta · orari in CEST (UTC+2)</p>
+
+      <div class="stats">
+        <div class="stat"><div class="v good">61</div><div class="k">voti favorevoli (+1)</div></div>
+        <div class="stat"><div class="v">59</div><div class="k">votanti distinti</div></div>
+        <div class="stat"><div class="v">0</div><div class="k">contrari</div></div>
+      </div>
+
+      <div class="chart">
+        <svg id="chart" viewBox="0 0 820 340" role="img" aria-label="Grafico cumulativo dei voti favorevoli nel tempo"></svg>
+        <div class="tip" id="tip"></div>
+      </div>
+
+      <p class="foot" id="foot"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA = [{"t":"2026-07-14T08:59:17.260Z","c":1,"u":"andyborruso","n":2},{"t":"2026-07-14T09:00:50.000Z","c":2,"u":"gianofe","n":3},{"t":"2026-07-14T09:07:04.000Z","c":3,"u":"Aldo_Gessa","n":4},{"t":"2026-07-14T09:12:06.256Z","c":4,"u":"Lu_Bar","n":5},{"t":"2026-07-14T09:25:38.000Z","c":5,"u":"Codato","n":6},{"t":"2026-07-14T09:27:59.000Z","c":6,"u":"ACorradini","n":7},{"t":"2026-07-14T09:32:18.000Z","c":7,"u":"Genna","n":8},{"t":"2026-07-14T09:37:34.797Z","c":8,"u":"GISspecialistAlejand","n":9},{"t":"2026-07-14T09:39:00.715Z","c":9,"u":"ValPinnaSardinia","n":10},{"t":"2026-07-14T09:46:28.000Z","c":10,"u":"Bianca_Federici","n":11},{"t":"2026-07-14T09:56:22.160Z","c":11,"u":"manoloterranova","n":12},{"t":"2026-07-14T10:04:00.377Z","c":12,"u":"piergiorgio-roveda","n":13},{"t":"2026-07-14T10:06:00.000Z","c":13,"u":"Sabrina_Casucci","n":14},{"t":"2026-07-14T10:08:17.966Z","c":14,"u":"sino87","n":15},{"t":"2026-07-14T10:32:12.143Z","c":15,"u":"MarcoTagliabue","n":16},{"t":"2026-07-14T10:47:47.221Z","c":16,"u":"Amefad","n":17},{"t":"2026-07-14T11:06:37.000Z","c":17,"u":"GiPi48","n":18},{"t":"2026-07-14T11:23:29.703Z","c":18,"u":"Carlo","n":19},{"t":"2026-07-14T11:30:41.000Z","c":19,"u":"Roberto_Bezzu","n":20},{"t":"2026-07-14T11:37:34.000Z","c":20,"u":"Umberto_Zulian1","n":21},{"t":"2026-07-14T11:42:01.000Z","c":21,"u":"christian_loda","n":22},{"t":"2026-07-14T12:09:18.000Z","c":22,"u":"rmarzocchi84","n":23},{"t":"2026-07-14T12:14:00.000Z","c":23,"u":"e111","n":24},{"t":"2026-07-14T12:50:00.201Z","c":24,"u":"corfede","n":25},{"t":"2026-07-14T13:40:17.233Z","c":25,"u":"lucalant","n":26},{"t":"2026-07-14T13:51:35.000Z","c":26,"u":"Ludovico","n":27},{"t":"2026-07-14T14:50:11.783Z","c":27,"u":"albertograva","n":28},{"t":"2026-07-14T14:58:26.136Z","c":28,"u":"ClaudioLadisaPK","n":29},{"t":"2026-07-14T14:58:59.000Z","c":29,"u":"Giuseppe_Mattiozzi","n":30},{"t":"2026-07-14T15:02:45.000Z","c":30,"u":"giacomo_amerio","n":31},{"t":"2026-07-14T15:13:20.000Z","c":31,"u":"Marco_Masciarelli","n":32},{"t":"2026-07-14T15:21:12.000Z","c":32,"u":"Iacopo_Zetti","n":33},{"t":"2026-07-14T15:22:03.000Z","c":33,"u":"Massimiliano_Flamign","n":34},{"t":"2026-07-14T15:24:05.068Z","c":34,"u":"Korto191","n":35},{"t":"2026-07-14T15:27:42.603Z","c":35,"u":"Beg","n":36},{"t":"2026-07-14T15:32:35.714Z","c":36,"u":"gbvitrano","n":37},{"t":"2026-07-14T15:40:31.000Z","c":37,"u":"Simone_Barbarotti","n":38},{"t":"2026-07-14T16:36:16.863Z","c":38,"u":"GEPO","n":39},{"t":"2026-07-14T16:36:23.120Z","c":39,"u":"l.gattiglia","n":40},{"t":"2026-07-14T16:54:08.818Z","c":40,"u":"adelchia","n":41},{"t":"2026-07-14T16:58:17.000Z","c":41,"u":"Giuliano.urgeghe","n":42},{"t":"2026-07-14T20:47:07.223Z","c":42,"u":"Dario","n":43},{"t":"2026-07-15T05:53:32.736Z","c":43,"u":"albertograva","n":44},{"t":"2026-07-15T06:01:48.225Z","c":44,"u":"RobiFag","n":45},{"t":"2026-07-15T06:30:54.741Z","c":45,"u":"Marco.1","n":46},{"t":"2026-07-15T07:31:48.761Z","c":46,"u":"falcesimo","n":47},{"t":"2026-07-15T08:13:42.000Z","c":47,"u":"gpuddu","n":48},{"t":"2026-07-15T09:30:07.770Z","c":48,"u":"Dario_Saccoccia","n":49},{"t":"2026-07-15T10:21:25.552Z","c":49,"u":"mfodera","n":50},{"t":"2026-07-15T12:53:31.000Z","c":50,"u":"laser","n":51},{"t":"2026-07-15T22:24:16.512Z","c":51,"u":"christian.orlando","n":52},{"t":"2026-07-17T09:18:48.000Z","c":52,"u":"ACorradini","n":54},{"t":"2026-07-17T10:37:06.777Z","c":53,"u":"marco_126","n":56},{"t":"2026-07-17T14:10:54.000Z","c":54,"u":"Gabriela","n":57},{"t":"2026-07-20T12:33:25.983Z","c":55,"u":"skampus","n":58},{"t":"2026-07-21T05:31:18.114Z","c":56,"u":"agiudiceandrea","n":59},{"t":"2026-07-21T07:16:17.000Z","c":57,"u":"Paolo_Venturelli","n":60},{"t":"2026-07-21T08:19:50.795Z","c":58,"u":"VadoDeCorsa","n":61},{"t":"2026-07-21T17:22:21.536Z","c":59,"u":"dbrossella","n":62},{"t":"2026-07-22T11:30:45.594Z","c":60,"u":"Antoviscomi","n":63},{"t":"2026-07-22T12:08:03.815Z","c":61,"u":"Isma23","n":64}];
+
+const W = 820, H = 340;
+const M = { top: 20, right: 54, bottom: 44, left: 40 };
+const iw = W - M.left - M.right, ih = H - M.top - M.bottom;
+
+const pts = DATA.map(d => ({ x: new Date(d.t).getTime(), y: d.c, u: d.u, n: d.n }));
+const x0 = pts[0].x, x1 = pts[pts.length-1].x;
+const yMax = 70;
+const sx = v => M.left + (v - x0) / (x1 - x0) * iw;
+const sy = v => M.top + ih - (v / yMax) * ih;
+
+const svgNS = "http://www.w3.org/2000/svg";
+const svg = document.getElementById("chart");
+const mk = (n, a) => { const e = document.createElementNS(svgNS, n); for (const k in a) e.setAttribute(k, a[k]); return e; };
+
+// y gridlines
+[0,10,20,30,40,50,60,70].forEach(v => {
+  svg.appendChild(mk("line", { x1: M.left, x2: M.left+iw, y1: sy(v), y2: sy(v), stroke: "var(--grid)", "stroke-width": 1 }));
+  const t = mk("text", { x: M.left-8, y: sy(v)+4, "text-anchor": "end", class: "tick" }); t.textContent = v; svg.appendChild(t);
+});
+
+// time helpers (CEST = UTC+2)
+const fmt = ms => { const d = new Date(ms); const h = d.getUTCHours()+2; const hh = ((h%24)+24)%24;
+  return String(hh).padStart(2,"0")+":"+String(d.getUTCMinutes()).padStart(2,"0"); };
+const fmtDay = ms => { const d = new Date(ms); const day = ((d.getUTCHours()+2)>=24 ? d.getUTCDate()+1 : d.getUTCDate()); return day+" lug"; };
+// x axis: one label + bottom tick per day (14 → 21 lug), dashed separator at midnight CEST
+for (let day = 14; day <= 22; day++) {
+  const dayStart = new Date(Date.UTC(2026,6,day-1,22,0,0)).getTime(); // 00:00 CEST of `day`
+  const dayEnd = new Date(Date.UTC(2026,6,day,22,0,0)).getTime();     // 00:00 CEST of next day
+  const cS = Math.max(x0, dayStart), cE = Math.min(x1, dayEnd);
+  if (cE < x0 || cS > x1) continue;
+  // dashed separator at the day's start (skip first)
+  if (day > 14) {
+    const xs = sx(cS);
+    svg.appendChild(mk("line", { x1: xs, x2: xs, y1: M.top, y2: M.top+ih, stroke: "var(--grid)", "stroke-width": 1, "stroke-dasharray": "3 4" }));
+  }
+  // day label centered over the day's visible span (top)
+  const xMid = (sx(cS) + sx(cE)) / 2;
+  const lb = mk("text", { x: xMid, y: M.top+13, "text-anchor": "middle", class: "axis-title", "font-weight": 600 }); lb.textContent = day+" lug"; svg.appendChild(lb);
+  // bottom tick + label
+  svg.appendChild(mk("line", { x1: xMid, x2: xMid, y1: M.top+ih, y2: M.top+ih+5, stroke: "var(--axis)", "stroke-width": 1 }));
+  const bl = mk("text", { x: xMid, y: M.top+ih+18, "text-anchor": "middle", class: "tick" }); bl.textContent = String(day); svg.appendChild(bl);
+}
+
+// area + step line (cumulative → step)
+let dLine = `M ${sx(pts[0].x)} ${sy(pts[0].y)}`;
+for (let i=1;i<pts.length;i++){ dLine += ` L ${sx(pts[i].x)} ${sy(pts[i-1].y)} L ${sx(pts[i].x)} ${sy(pts[i].y)}`; }
+const dArea = `${dLine} L ${sx(pts[pts.length-1].x)} ${sy(0)} L ${sx(pts[0].x)} ${sy(0)} Z`;
+svg.appendChild(mk("path", { d: dArea, fill: "var(--series-1-soft)", stroke: "none" }));
+svg.appendChild(mk("path", { d: dLine, fill: "none", stroke: "var(--series-1)", "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
+
+// end marker + label
+const last = pts[pts.length-1];
+svg.appendChild(mk("circle", { cx: sx(last.x), cy: sy(last.y), r: 4.5, fill: "var(--series-1)", stroke: "var(--surface-1)", "stroke-width": 2 }));
+const el = mk("text", { x: sx(last.x)-8, y: sy(last.y-9), "text-anchor": "end", class: "end-label" }); el.textContent = "61 voti"; svg.appendChild(el);
+
+// axis title y
+const yt = mk("text", { x: M.left-8, y: M.top-6, "text-anchor": "start", class: "axis-title" }); yt.textContent = "voti cumulati"; svg.appendChild(yt);
+
+// hover
+const tip = document.getElementById("tip");
+const hv = mk("line", { x1:0,x2:0,y1:M.top,y2:M.top+ih, stroke:"var(--axis)","stroke-width":1, opacity:0 }); svg.appendChild(hv);
+const hd = mk("circle", { r:5, fill:"var(--series-1)", stroke:"var(--surface-1)","stroke-width":2, opacity:0 }); svg.appendChild(hd);
+const overlay = mk("rect", { x:M.left, y:M.top, width:iw, height:ih, fill:"transparent" }); svg.appendChild(overlay);
+
+function nearest(px){ let best=0,bd=1e9; for(let i=0;i<pts.length;i++){ const d=Math.abs(sx(pts[i].x)-px); if(d<bd){bd=d;best=i;} } return best; }
+overlay.addEventListener("mousemove", e => {
+  const r = svg.getBoundingClientRect(); const px = (e.clientX - r.left) / r.width * W;
+  const i = nearest(px); const p = pts[i];
+  hv.setAttribute("x1", sx(p.x)); hv.setAttribute("x2", sx(p.x)); hv.setAttribute("opacity", 1);
+  hd.setAttribute("cx", sx(p.x)); hd.setAttribute("cy", sy(p.y)); hd.setAttribute("opacity", 1);
+  tip.style.opacity = 1;
+  tip.style.left = (sx(p.x)/W*r.width) + "px";
+  tip.style.top = (sy(p.y)/H*r.height) + "px";
+  tip.innerHTML = `<div class="t-user">${p.y}° voto · @${p.u}</div><div class="t-meta">${fmtDay(p.x)} ${fmt(p.x)} · post #${p.n}</div>`;
+});
+overlay.addEventListener("mouseleave", () => { tip.style.opacity=0; hv.setAttribute("opacity",0); hd.setAttribute("opacity",0); });
+
+document.getElementById("foot").textContent =
+  "Primo voto 14 lug 10:59 · ultimo 22 lug 14:08 (CEST) · 42 voti nella prima giornata. Ultimo controllo 22/07/2026 15:23 (CEST) via API Discourse. Scadenza votazione 21 luglio 2026 (superata, voti ancora in arrivo).";
+</script>
+
+<div class="admonition warning">
+<p class="admonition-title">DISCLAIMER <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224 256a128 128 0 1 0 0-256 128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3 0 498.7 13.3 512 29.7 512h362.9c-5.4-9.4-8.6-20.3-8.6-32V352c0-2.1.1-4.2.3-6.3-31-26-71-41.7-114.6-41.7h-91.4zM528 240c17.7 0 32 14.3 32 32v48h-64v-48c0-17.7 14.3-32 32-32zm-80 32v48c-17.7 0-32 14.3-32 32v128c0 17.7 14.3 32 32 32h160c17.7 0 32-14.3 32-32V352c0-17.7-14.3-32-32-32v-48c0-44.2-35.8-80-80-80s-80 35.8-80 80z"/></svg></span></p>
+<p>Il presente materiale didattico è stato realizzato e aggiornato da <strong>Salvatore Fiandaca</strong> nell'ambito del <strong>Academy Pigrecoinfinito - 2026</strong>.</p>
+<p>Sviluppato utilizzando <a href="https://qgis.org/it/site/">QGIS 3.44 Solothurn LTR</a> nel periodo Maggio 2026.</p>
+<p><strong>AVVISO</strong>: Questo contenuto è distribuito esclusivamente per uso didattico e privato dei partecipanti al corso. Non è consentita la redistribuzione o la pubblicazione senza l'autorizzazione esplicita dell'autore.</p>
+<p>©2026 Salvatore Fiandaca - Tutti i diritti riservati.</p>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+        
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href="intro.html" class="md-footer__link md-footer__link--prev" aria-label="Precedente: Intro">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                Intro
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="capitoli/corso_base/010_breve_intro.html" class="md-footer__link md-footer__link--next" aria-label="Successivo: Breve Introduzione">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                Breve Introduzione
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <b>Ing. Salvatore Fiandaca</b> | 2026 | <a href="https://pigrecoinfinito.com//" target="_self" title="Chi Siamo" >About</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+    
+    
+    
+      
+      
+    
+    <a href="https://mastodon.uno/@pigreco71" target="_blank" rel="noopener me" title="mastodon.uno" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://t.me/pigrecoinfinito" target="_blank" rel="noopener" title="t.me" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M248 8C111.033 8 0 119.033 0 256s111.033 248 248 248 248-111.033 248-248S384.967 8 248 8Zm114.952 168.66c-3.732 39.215-19.881 134.378-28.1 178.3-3.476 18.584-10.322 24.816-16.948 25.425-14.4 1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25 5.342-39.5 3.652-3.793 67.107-61.51 68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608 69.142-14.845 10.194-26.894 9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7 18.45-13.7 108.446-47.248 144.628-62.3c68.872-28.647 83.183-33.623 92.511-33.789 2.052-.034 6.639.474 9.61 2.885a10.452 10.452 0 0 1 3.53 6.716 43.765 43.765 0 0 1 .417 9.769Z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/@pigrecoinfinito" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/pigreco" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.qgis.org/community/contributors/supporting/#:~:text=Salvatore%20Fiandaca" target="_blank" rel="noopener" title="www.qgis.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.879 13.006v3.65l-3.004-3.048v-3.495h3.582l2.852 2.893h-3.43zm10.886 7.606V24h-3.654l-5.73-5.9v-3.55h3.354l6.03 6.062zm-10.828-1.448 3.372 3.371c-1.309.442-2.557.726-4.325.726C5.136 23.26 0 18.243 0 11.565 0 4.92 5.136 0 11.984 0 18.864 0 24 4.952 24 11.565c0 2.12-.523 4.076-1.457 5.759l-3.625-3.725a8.393 8.393 0 0 0 .24-2.005c0-4.291-3.148-7.527-7.1-7.527-3.954 0-7.248 3.236-7.248 7.527s3.33 7.6 7.247 7.6c.548 0 .661.017.88-.03z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.indexes", "navigation.tracking", "navigation.tabs", "navigation.top", "search.suggest", "search.share", "navigation.footer", "toc.follow", "content.action.edit", "content.action.view", "content.code.copy"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.dd8806f2.min.js"></script>
+      
+        <script src="javascripts/varie.js"></script>
+      
+        <script src="javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

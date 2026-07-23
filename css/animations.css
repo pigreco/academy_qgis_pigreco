@@ -1,0 +1,111 @@
+/* Animazioni per il logo Q */
+
+/* Stile base per il logo */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg,
+.md-nav__button.md-logo img,
+.md-nav__button.md-logo svg {
+    transition: all 0.3s ease;
+    border-radius: 50%; /* Se vuoi un effetto circolare */
+}
+
+/* OPZIONE 1: Animazione hover con rotazione */
+.md-header__button.md-logo:hover img,
+.md-header__button.md-logo:hover svg {
+    transform: rotate(360deg) scale(1.1);
+    filter: drop-shadow(0 0 10px rgba(74, 171, 247, 0.6));
+}
+
+/* OPZIONE 2: Animazione continua - rotazione lenta (commenta l'opzione 1 se usi questa) */
+/*
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    animation: spin-slow 8s linear infinite;
+}
+
+@keyframes spin-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+*/
+
+/* OPZIONE 3: Effetto pulsazione (commenta le altre se usi questa) */
+/*
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+    animation: pulse-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-glow {
+    0% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 5px rgba(74, 171, 247, 0.3));
+    }
+    100% {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 15px rgba(74, 171, 247, 0.8));
+    }
+}
+*/
+
+/* OPZIONE 4: Animazione di caricamento - slide in */
+.md-header__button.md-logo {
+    animation: slideInBounce 1s ease-out;
+}
+
+@keyframes slideInBounce {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(10px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Effetto hover aggiuntivo - rimbalzo */
+.md-header__button.md-logo:hover {
+    animation: bounce-small 0.6s ease;
+}
+
+@keyframes bounce-small {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-8px);
+    }
+    60% {
+        transform: translateY(-4px);
+    }
+}
+
+/* Personalizzazioni aggiuntive per Academy Planetek */
+.md-header__button.md-logo {
+    position: relative;
+}
+
+/* Effetto bagliore personalizzato per il tema blu */
+.md-header__button.md-logo:hover::after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #4dabf7, #339af0);
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.3;
+    animation: glow-border 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow-border {
+    0% { opacity: 0.3; }
+    100% { opacity: 0.7; }
+}
