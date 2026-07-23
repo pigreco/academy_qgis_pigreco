@@ -46,6 +46,7 @@ theme:
 nav:
   - Home: index.md
   - Intro: intro.md
+  - Certificazione QGIS: certificazione_qgis.md
   - Capitoli Corso Base:
     - Breve Introduzione: capitoli/corso_base/010_breve_intro.md
     - QGIS 4 - Cosa sapere: capitoli/corso_base/QGIS4_COSA_SAPERE.md
@@ -76,7 +77,6 @@ nav:
       - Stampa: capitoli/corso_base/153_stampa_stampe.md
       - Stampa in serie: capitoli/corso_base/155_stampe_in_serie.md
     - Comunità QGIS: capitoli/corso_base/160_comunita_qgis.md
-    - Certificazioni e Contributi: capitoli/corso_base/165_contributi_qgis.md
   - Capitoli Corso Avanzato:
     - Motore espressioni: 
       - Field Calc: capitoli/corso_avanzato/01_motore_espressioni/01_field_calc.md
@@ -100,12 +100,6 @@ nav:
       - Cloud AWS S3 IRIDE: capitoli/corso_avanzato/04_varie/03_cloud_aws_s3_iride.md
       - Stili qml e SLD: capitoli/corso_avanzato/04_varie/04_stili_qml_sld.md
       - gdalinfo processing: capitoli/corso_avanzato/04_varie/05_gdalinfo_processing.md
-    - Capitoli Corso AI:
-      - Introduzione all'AI: capitoli/corso_ai/010_intro_ai.md
-      - Script da Console QGIS: capitoli/corso_ai/020_script_console_qgis.md
-      - Algoritmi di Processing: capitoli/corso_ai/030_algoritmi_processing.md
-      - Plugin QGIS: capitoli/corso_ai/040_plugin_qgis.md
-      - MCP Server: capitoli/corso_ai/050_mcp_server.md
   - Esercitazioni:
      - esercitazioni/index.md
      - VESTIZIONE:

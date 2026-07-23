@@ -91,30 +91,17 @@ Versione utilizzata **QGIS 3.44.x Solothurn LTR**
     circa 12 ore
     
     - Motore delle espressioni di QGIS:
-        - tabella degli attributi
-        - funzioni core
-        - funzioni personalizzate
-        - selezione per espressione
+
     - Compositore di stampe di QGIS:
-        - stampe semplici
-        - stampe in serie (atlanti)
+
     - Strumenti di processing:
-        - toolbox
-        - modellatore grafico
-        - storico
-        - esecuzione in serie
+
     - Plugin georeferenziatore:
-        - raster
-        - vettoriale
+
     - Raster
-        - Calcolo indici spettrali (NDVI, NDWI,ec...)
-        - Formato raster (GeoTiff, COG GeoTiff, NetCDF)
+
     - Varie
-        - Moduli per data entry
-        - Controllo geometrie e chek topology
-        - Cloud AWS S3 IRIDE
-        - Stili qml e SLD
-        - gdalinfo da processing
+
 ---
 
 Monte ore: :clock3: **24 h** (1)
