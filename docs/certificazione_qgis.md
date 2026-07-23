@@ -90,17 +90,19 @@ Le tipologie di corso disponibili spaziano dalle competenze GIS di base alla car
 
 ![](./imgs/certification.svg){.center-img .img-50}
 
-!!! note "Iter in corso — aggiornato al 17 luglio 2026"
+!!! success "Approvazione ottenuta — aggiornato al 23 luglio 2026"
 
-    **Ing. Salvatore Fiandaca** ha avviato l'iter per entrare nel programma di certificazione QGIS come *trainer*.
+    **Ing. Salvatore Fiandaca** ha completato con esito positivo l'iter per entrare nel programma di certificazione QGIS come *trainer*.
 
     La candidatura è stata sottoposta al voto del **QGIS User Group italiano**, secondo la procedura di valutazione descritta sopra:
 
     - **Discussione e voto**: [Approvazione certificazione :octicons-link-external-16:](https://discourse.osgeo.org/t/approvazione-certificazione/154453) — thread aperto da Matteo Ghetta il 14 luglio 2026 su OSGeo Discourse
-    - **Esito parziale**: oltre 20 voti **+1** dalla comunità, nessun voto contrario
+    - **Esito del voto**: **61 voti +1** da 59 votanti distinti, **nessun voto contrario** (42 voti già nella prima giornata)
     - **Scadenza della votazione**: 21 luglio 2026
-    - **Passo successivo**: approvazione finale da parte del **Project Steering Committee** di QGIS
+    - **Approvazione finale**: ottenuta dal **Project Steering Committee** di QGIS
 
-    L'iter è quindi **ancora in fase di definizione**: questa sezione verrà aggiornata ad esito concluso.
+    L'andamento dei voti nel tempo è riportato nel grafico sottostante.
+
+{!voti_certificazione.html!}
 
 {!includes/disclaimer.md!}
