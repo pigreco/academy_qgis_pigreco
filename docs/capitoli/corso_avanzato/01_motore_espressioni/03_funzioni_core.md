@@ -160,16 +160,16 @@ Nel gruppo geometria c'è una funzione per `modificare proiezione`:
 
 ... e altre ancora, per calcolo angoli, azimuth, perimetro, lunghezze, aree ecc...
 
-Le funzioni **geometriche** sono fortemente legate al **SR** (Sistema di Riferimento), quindi occorre aver chiaro la differenza tra i vari **SR** (Geografici, Proiettati). Inoltre alcune funzioni ($area, $length) dipendono dalla configurazione del progetto **QGIS**, cioè dipendono da come vengono impostate le proprietà del progetto: Menu `Progetto | Proprietà | Generale | Misure` qui è possibile settare le unità di misura, il datum (ellissoide), quindi in generale:
+Le funzioni **geometriche** sono fortemente legate al **SR** (Sistema di Riferimento), quindi occorre aver chiaro la differenza tra i vari **SR** (Geografici, Proiettati). Inoltre alcune funzioni (`$area`, `$length`) dipendono dalla configurazione del progetto **QGIS**, cioè dipendono da come vengono impostate le proprietà del progetto: Menu `Progetto | Proprietà | Generale | Misure` qui è possibile settare le unità di misura, il datum (ellissoide), quindi in generale:
 
 !!! Warning
-    - $area[^1] <> Area($geometry)[^2]
-    - $length[^3] <> length ($geometry)[^4]
+    - `$area`[^1] <> `Area($geometry)`[^2]
+    - `$length`[^3] <> `length($geometry)`[^4]
 
 
 ![](../../../imgs/field_calc/img_02.png)
 
-[Blog post](https://pigrecoinfinito.wordpress.com/2018/09/05/qgis-e-la-funzione-length/) su $length
+[Blog post](https://pigrecoinfinito.wordpress.com/2018/09/05/qgis-e-la-funzione-length/) su `$length`
 
 !!! Note
     Per evitare brutte sorprese è consigliabile leggere sempre la definizione delle funzione.
