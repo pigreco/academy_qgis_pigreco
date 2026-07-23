@@ -31,11 +31,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pigreco.github.io/academy_qgis_pigreco/questionario.html</loc>
-         <lastmod>2026-07-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://pigreco.github.io/academy_qgis_pigreco/storia_qgis.html</loc>
          <lastmod>2026-07-23</lastmod>
          <changefreq>daily</changefreq>
@@ -67,11 +62,6 @@
     </url>
     <url>
          <loc>https://pigreco.github.io/academy_qgis_pigreco/capitoli/corso_avanzato/01_motore_espressioni/05_selezione_x_espressione.html</loc>
-         <lastmod>2026-07-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://pigreco.github.io/academy_qgis_pigreco/capitoli/corso_avanzato/02_compositore_stampe/01_stampe_semplici.html</loc>
          <lastmod>2026-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -137,11 +127,6 @@
     </url>
     <url>
          <loc>https://pigreco.github.io/academy_qgis_pigreco/capitoli/corso_avanzato/04_varie/05_gdalinfo_processing.html</loc>
-         <lastmod>2026-07-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://pigreco.github.io/academy_qgis_pigreco/capitoli/corso_avanzato/04_varie/06_trigger.html</loc>
          <lastmod>2026-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -231,17 +216,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://pigreco.github.io/academy_qgis_pigreco/capitoli/corso_base/122b_sentinel.html</loc>
-         <lastmod>2026-07-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://pigreco.github.io/academy_qgis_pigreco/capitoli/corso_base/123_georeferenziatore.html</loc>
-         <lastmod>2026-07-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://pigreco.github.io/academy_qgis_pigreco/capitoli/corso_base/124_cenni_telerilevamento.html</loc>
          <lastmod>2026-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -252,11 +227,6 @@
     </url>
     <url>
          <loc>https://pigreco.github.io/academy_qgis_pigreco/capitoli/corso_base/150_stampa_intro.html</loc>
-         <lastmod>2026-07-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://pigreco.github.io/academy_qgis_pigreco/capitoli/corso_base/150_stampa_intro_old.html</loc>
          <lastmod>2026-07-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
