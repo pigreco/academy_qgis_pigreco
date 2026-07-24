@@ -17,28 +17,12 @@ Durante questo corso intensivo di 24 ore imparerai a utilizzare QGIS in modo com
 
 **Step 2 — Gestione dei dati**
 
-- Importerai ed esporterai dati vettoriali, raster e tabellari.
-- Curerai simbologia ed etichettatura.
-- Eseguirai l’editing e creerai layout di stampa.
-
 **Step 3 — Plugin e fonti esterne**
-
-- Userai i plugin.
-- Lavorerai con servizi web (WMS/WFS).
-- Georiferirai immagini ed esporterai dati per Google Earth.
 
 **Step 4 — Automazione e analisi avanzata**
 
-- Userai il modellatore grafico per automatizzare i flussi di lavoro.
-- Genererai indici spettrali con il calcolatore raster.
-- Effettuerai il controllo topologico e configurerai moduli per la raccolta dati.
-- Realizzerai l’animazione dei layer e userai plugin evoluti come DataPlotly.
-
 **Step 5 — Cloud, stili e riga di comando**
 
-- Lavorerai con dati in cloud (AWS S3, IRIDE con VPN).
-- Gestirai gli stili QML/SLD.
-- Utilizzerai strumenti da riga di comando come gdalinfo.
 
 Alla fine del corso sarai in grado di usare **QGIS** in modo professionale per creare, analizzare e rappresentare dati geografici con efficienza e precisione.
 
@@ -100,7 +84,7 @@ Versione utilizzata **QGIS 3.44.x Solothurn LTR**
 
     - Raster
 
-    - Varie
+    - Varie...
 
 ---
 
