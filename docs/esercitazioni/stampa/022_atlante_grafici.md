@@ -58,15 +58,10 @@ Realizzare un **atlante** utilizzando come layer di copertura il vettore **regio
 
       - dal Pannello _Atlante_
 
-      ![](../../imgs/cap_15/img_06.png)
-
       - dal Pannello _Prorietà dell'Oggetto_ (mappa `regioni`)
-
-      ![](../../imgs/cap_15/img_061.png)
 
       stessa cosa va fatta per la mappa `province`, in modo da avere due mappe legate allo stesso atlante:
 
-      ![](../../imgs/cap_15/img_062.png)
 
 === "Panoramica"
 
