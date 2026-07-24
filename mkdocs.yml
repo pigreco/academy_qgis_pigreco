@@ -111,7 +111,6 @@ nav:
      - PRINT LAYOUT:
          - Stampe primi esempi: esercitazioni/stampa/021_esempi_base_stampa.md
          - Atlante con grafici: esercitazioni/stampa/022_atlante_grafici.md
-         - Atlante con foto: esercitazioni/stampa/024_atlante_con_foto.md
          - Atlante nascondere feature: esercitazioni/stampa/025_atlante_nascondere_feature.md
      - PROCESSING:
          - Toolbox: esercitazioni/processing/031_toolbox.md
