@@ -213,5 +213,3 @@ Realizzare un **atlante** utilizzando come layer di copertura il vettore **regio
 [risorse:qgis-hub](http:/qgis-hub.fast-page.org/layouts.php)
 
 {!includes/disclaimer.md!}
-
-[^1]: dal menu Progetto
