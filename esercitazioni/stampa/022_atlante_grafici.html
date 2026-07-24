@@ -2534,15 +2534,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#mappe" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mappe
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -3351,15 +3342,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#mappe" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mappe
-    </span>
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -3540,36 +3522,6 @@
 <h4 id="formattare-testo-etichette">Formattare testo etichette<a class="headerlink" href="#formattare-testo-etichette" title="Permanent link">&para;</a></h4>
 <h4 id="tabella-attributi">Tabella Attributi<a class="headerlink" href="#tabella-attributi" title="Permanent link">&para;</a></h4>
 <h4 id="grafico">Grafico<a class="headerlink" href="#grafico" title="Permanent link">&para;</a></h4>
-<h4 id="mappe">Mappe<a class="headerlink" href="#mappe" title="Permanent link">&para;</a></h4>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Panoramica</label><label for="__tabbed_3_2">Regioni</label><label for="__tabbed_3_3">Province</label><label for="__tabbed_3_4">Numero pagina Atlante</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>La mappa <code>panoramica</code> Bloccare Layer e stile in modo da non modificare la visualizzazione della panoramica, questo perché il layer verrà successivamente modificato utilòizzando una tematizzazione tramite regola:</p>
-<p><a class="glightbox" href="../../imgs/cap_15/img_021.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../imgs/cap_15/img_021.png" /></a></p>
-</div>
-<div class="tabbed-block">
-<p>Per visualizzare solo la regione corrente (e non le altre confinanti) un modo è quello di tematizzare il layer usando questo filtro nella regola:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="s2">&quot;den_reg&quot;</span>  <span class="o">=</span>  <span class="nd">@atlas_pagename</span> 
-</code></pre></div>
-<p><a class="glightbox" href="../../imgs/cap_15/img_022.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../imgs/cap_15/img_022.png" /></a></p>
-<p>ecco cosa accade nel layout:</p>
-<p><a class="glightbox" href="../../imgs/cap_15/img_023.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../imgs/cap_15/img_023.png" /></a></p>
-</div>
-<div class="tabbed-block">
-<p>Per visualizzare solo le province della regione corrente (e non le altre confinanti) un modo è quello di tematizzare il layer usando questo filtro nella regola:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">contains</span><span class="p">(</span><span class="nd">@atlas_geometry</span><span class="p">,</span><span class="n">point_on_surface</span><span class="p">(</span><span class="err">$</span><span class="n">geometry</span><span class="p">))</span>
-</code></pre></div>
-<p><a class="glightbox" href="../../imgs/cap_15/img_024.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../imgs/cap_15/img_024.png" /></a></p>
-<p>ecco cosa accade nel layout:</p>
-<p><a class="glightbox" href="../../imgs/cap_15/img_025.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../imgs/cap_15/img_025.png" /></a></p>
-</div>
-<div class="tabbed-block">
-<p>Aggingere numero pagina e il totale delle pagine (sono due variabili):</p>
-<p><a class="glightbox" href="../../imgs/cap_15/img_026.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img alt="" src="../../imgs/cap_15/img_026.png" /></a></p>
-</div>
-</div>
-</div>
-<hr />
 <h2 id="esportazione">Esportazione<a class="headerlink" href="#esportazione" title="Permanent link">&para;</a></h2>
 <h2 id="avanzato">Avanzato<a class="headerlink" href="#avanzato" title="Permanent link">&para;</a></h2>
 <h3 id="generatore-di-geometrie">Generatore di geometrie<a class="headerlink" href="#generatore-di-geometrie" title="Permanent link">&para;</a></h3>
