@@ -142,8 +142,6 @@ Realizzare un **atlante** utilizzando come layer di copertura il vettore **regio
 
 ### Sistemare
 
-
-
 #### Guide orizzontali e verticali
 
 #### Formattare testo etichette
@@ -152,51 +150,6 @@ Realizzare un **atlante** utilizzando come layer di copertura il vettore **regio
 
 #### Grafico
 
-
-#### Mappe
-
-=== "Panoramica"
-
-    La mappa `panoramica` Bloccare Layer e stile in modo da non modificare la visualizzazione della panoramica, questo perché il layer verrà successivamente modificato utilòizzando una tematizzazione tramite regola:
-
-    ![](../../imgs/cap_15/img_021.png)
-
-=== "Regioni"
-
-    Per visualizzare solo la regione corrente (e non le altre confinanti) un modo è quello di tematizzare il layer usando questo filtro nella regola:
-
-    ```py
-    "den_reg"  =  @atlas_pagename 
-    ```
-
-    ![](../../imgs/cap_15/img_022.png)
-
-    ecco cosa accade nel layout:
-
-    ![](../../imgs/cap_15/img_023.png)
-
-=== "Province"
-
-    Per visualizzare solo le province della regione corrente (e non le altre confinanti) un modo è quello di tematizzare il layer usando questo filtro nella regola:
-
-    ```py
-    contains(@atlas_geometry,point_on_surface($geometry))
-    ```
-
-    ![](../../imgs/cap_15/img_024.png)
-
-    ecco cosa accade nel layout:
-
-    ![](../../imgs/cap_15/img_025.png)
-
-=== "Numero pagina Atlante"
-
-    Aggingere numero pagina e il totale delle pagine (sono due variabili):
-
-    ![](../../imgs/cap_15/img_026.png)
-
----
-
 ## Esportazione
 
 ## Avanzato
@@ -204,7 +157,6 @@ Realizzare un **atlante** utilizzando come layer di copertura il vettore **regio
 ### Generatore di geometrie
 
 ### Colore Bar Plot
-
 
 ### Colori categorizzati Bar Plot
 
