@@ -129,10 +129,10 @@ nav:
     - Dati: dati/index.md
   - Bibliografia:
     - Bibliografia: bibliografia/bibliografia.md
-  - Conclusioni: outro.md
   - Glossario: glossario.md
   - Historia di QGIS: storia_qgis.md
   - FAQ: faq.md
+  - Licenza uso: licenza_uso.md
 
 
 

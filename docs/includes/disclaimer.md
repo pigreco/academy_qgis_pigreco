@@ -4,6 +4,6 @@
 
     Sviluppato utilizzando [QGIS 3.44 Solothurn LTR](https://qgis.org/it/site/) nel periodo Maggio 2026.
 
-    **AVVISO**: Questo contenuto è distribuito esclusivamente per uso didattico e privato dei partecipanti al corso. Non è consentita la redistribuzione o la pubblicazione senza l'autorizzazione esplicita dell'autore.
+    Materiale rilasciato con licenza [Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.it): sei libero di condividerlo e modificarlo, anche per fini commerciali, a condizione di riconoscerne la paternità. Vedi la pagina *Licenza uso*.
 
-    ©2026 Salvatore Fiandaca - Tutti i diritti riservati.
+    ©2026 Salvatore Fiandaca - CC BY 4.0.

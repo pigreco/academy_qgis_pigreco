@@ -54,7 +54,7 @@ mkdocs gh-deploy
 ## Licenza
 
 I contenuti didattici sono rilasciati con licenza
-**[Creative Commons Attribuzione-NonCommerciale-NonOpereDerivate 4.0 Internazionale (CC BY-NC-ND 4.0)](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.it)** —
+**[Creative Commons Attribuzione 4.0 Internazionale (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/deed.it)** —
 vedi il file [`LICENSE`](LICENSE).
 
 © 2026 **Salvatore Fiandaca** (_Pigrecoinfinito_)
