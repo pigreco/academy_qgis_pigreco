@@ -63,7 +63,6 @@ nav:
     - GeoDB: capitoli/corso_base/080_geodb.md
     - Servizi Web: capitoli/corso_base/090_servizi_web.md
     - Gestione Foto Geotag: capitoli/corso_base/100_gestione_foto_geotag.md
-    - Google Earth KMZ: capitoli/corso_base/110_ge_kmz.md
     - RASTER:
       - Analisi: capitoli/corso_base/121_raster_analisi.md
       - DTM e DSM: capitoli/corso_base/122_dtm_dsm.md
@@ -75,7 +74,6 @@ nav:
       - Layout: capitoli/corso_base/151_stampa_layout.md
       - Atlante: capitoli/corso_base/152_stampa_atlante.md
       - Stampa: capitoli/corso_base/153_stampa_stampe.md
-      - Stampa in serie: capitoli/corso_base/155_stampe_in_serie.md
     - Comunità QGIS: capitoli/corso_base/160_comunita_qgis.md
   - Capitoli Corso Avanzato:
     - Motore espressioni: 
@@ -83,8 +81,7 @@ nav:
       - Tabella degli attributi: capitoli/corso_avanzato/01_motore_espressioni/02_tabella_attributi.md
       - Funzioni Core: capitoli/corso_avanzato/01_motore_espressioni/03_funzioni_core.md
       - Funzioni Custom: capitoli/corso_avanzato/01_motore_espressioni/04_funzioni_personalizzate.md
-      - Selezione: capitoli/corso_avanzato/01_motore_espressioni/05_selezione_x_espressione.md
-    - Stampa avanzata: 
+    - Stampa avanzata:
       - Atlanti con Grafici: capitoli/corso_avanzato/02_compositore_stampe/02_stampe_in_serie.md
       - Atlanti e variabili: capitoli/corso_avanzato/02_compositore_stampe/03_stampe_in_serie_variabili.md
     - Strumenti di Processing: 

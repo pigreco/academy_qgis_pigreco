@@ -49,23 +49,7 @@ Per creare un nuovo profilo utente:
 2. Selezionare il profilo desiderato dall'elenco
 3. QGIS si riavvierà automaticamente con il profilo selezionato
 
-### Identificare il profilo attivo
-
-Quando sono presenti più profili, il nome del profilo attualmente attivo è indicato nella **barra del titolo** dell'applicazione tra parentesi quadre.
-
-![](../../imgs/02_installazione/profilo2.png){.center-img .img-50}
-
-Se non viene modificato, il profilo dell'ultima sessione chiusa di QGIS verrà utilizzato nelle successive sessioni.
-
 ## Casi d'uso dei profili
-
-### Separare ambienti di lavoro
-
-I profili sono utili per mantenere separate diverse configurazioni di lavoro:
-
-* **Profilo didattico**: con plugin e impostazioni specifiche per l'insegnamento
-* **Profilo professionale**: configurato per attività lavorative quotidiane
-* **Profilo sviluppo**: per testare nuovi plugin o funzionalità sperimentali
 
 ### Profilo pulito per verifica bug :octicons-bug-16:
 
@@ -73,61 +57,6 @@ Quando incontri uno strano comportamento con alcune funzioni in QGIS, crea un nu
 
 !!! tip "Suggerimento per il debug"
     Prima di segnalare un bug, è buona prassi verificare se il problema si presenta anche in un profilo pulito. Questo aiuta a determinare se il problema è effettivo o legato alla configurazione specifica.
-
-### Profili per corsi e formazione
-
-Quando si seguono corsi o si partecipa a workshop, è consigliabile creare un profilo dedicato. In questo modo:
-
-* Si evita di "sporcare" il profilo di lavoro principale
-* Si possono installare plugin specifici per il corso
-* È facile ripristinare le impostazioni originali al termine del corso
-
-## Gestione avanzata
-
-### Cartella del profilo
-
-Ogni profilo è memorizzato in una cartella specifica nel sistema. Per accedere alla cartella del profilo attivo:
-
-1. Menu **Impostazioni** > **Profili utente**
-2. Selezionare **Apri cartella del profilo attivo**
-
-![](../../imgs/02_installazione/profilo3.png){.center-img .img-60}
-
-Questo apre la cartella nel file manager del sistema operativo, permettendo di:
-
-* Effettuare backup manuali
-* Copiare configurazioni tra computer diversi
-* Esaminare i file di configurazione
-
-### Selettore Profilo Utente
-
-È possibile configurare il Selettore del Profilo utente per farlo visualizzare all'avvio di QGIS:
-
-1. Menu **Impostazioni** > **Profili utente**
-2. Selezionare _Scegli Profilo all'avvio_;
-
-![](../../imgs/02_installazione/profilo4.png){.center-img .img-80}
-
-![](../../imgs/02_installazione/profilo5.png){.center-img .img-30}
-
-### Eliminare un profilo
-
-Per rimuovere un profilo non più necessario occorre agire manualmente, oppure installare un Plugin (_Profile Manager_) creato appositamente per gestire i Plugin.
-
-## Best practices
-
-### Quando usare i profili
-
-* **Testing di nuove funzionalità**: crea un profilo di test per provare nuove versioni o plugin sperimentali
-* **Formazione**: mantieni un profilo dedicato per seguire corsi o tutorial
-* **Troubleshooting**: usa profili puliti per diagnosticare problemi
-* **Progetti specifici**: configura profili personalizzati per progetti con requisiti particolari
-
-### Manutenzione dei profili
-
-* Pulisci periodicamente i profili non utilizzati per liberare spazio su disco
-* Effettua backup dei profili importanti
-* Documenta le personalizzazioni effettuate in ciascun profilo per riferimento futuro
 
 ## Conclusioni
 

@@ -20,7 +20,7 @@ Realizzare un **atlante** utilizzando come layer di copertura il vattore **regio
 - una panoramica,
 - altri oggetti utili alla comprensione dell'atlante. (a seguire il risultato atteso - gif animata)
 
-![](../../../imgs/cap_15/atlante_grafico.gif){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ### Cosa occorre
 
@@ -36,25 +36,25 @@ Creare un nuovo geopackage e importare i due shapefile `Reg01012020_g_WGS84` e `
 
 Importare in QGIS i due layer `Reg01012020_g_WGS84` e `ProvCM01012020_g_WGS84`
 
-![](../../../imgs/cap_15/img_01.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 #### Creare relazione 
 
 Creare relazione 1:m tra i due layer
 
-![](../../../imgs/cap_15/img_02.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 #### Aggiungere viste
 
 Aggiungo due viste per utilizzarle successivamente nell'atlante: **regioni**, **province**
 
-![](../../../imgs/cap_15/img_03.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 #### Nuovo Layout di stampa
 
 Creo nuovo layout (Ctrl + P) e lo chiamo `atlante con grafici`
 
-![](../../../imgs/cap_15/img_04.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 By default la pagina è A4 orizzontale
 
@@ -66,55 +66,55 @@ By default la pagina è A4 orizzontale
 
 per rinominare un oggetto mappa doppio clic sul nome, nel pannello Oggetti.
 
-![](../../../imgs/cap_15/img_05.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Definire Atlante
 
 1. dal Pannello _Atlante_
 
-![](../../../imgs/cap_15/img_06.png){.center-img .img-70}
+![](../../../imgs/evolution.png){.center-img .img-70}
 
 2. dal Pannello _Prorietà dell'Oggetto_ (mappa `regioni`)
 
-![](../../../imgs/cap_15/img_061.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 stessa cosa va fatta per la mappa `province`, in modo da avere due mappe legate allo stesso atlante:
 
-![](../../../imgs/cap_15/img_062.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Impostare la Panoramica
 
 Imposto la **Panoramica** della mappa `regioni`
 
-![](../../../imgs/cap_15/img_07.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 adattare l'estensione della mappa (panoramica) al riquadro utilizzando l'icona ![](../../../imgs/field_calc/icon/mActionMoveItemContent.png) e la rotellina del mouse con ctrl premuto.
 
-![](../../../imgs/cap_15/img_071.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Anteprima Atlante
 
 Attivare anteprima atlante per verificare che tutto sia ben impostato, cliccare sull'icona ![](../../../imgs/field_calc/icon/mIconAtlas.png)
 
-![](../../../imgs/cap_15/img_08.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Associare Viste alle mappa
 
 Associare le **viste** create alla mappa `regioni` e `province`:
 
-![](../../../imgs/cap_15/img_09.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
-![](../../../imgs/cap_15/img_091.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Grafico Bar Plot
 
 Aggiungere grafico utilizzando l'icona ![](../../../imgs/field_calc/icon/dataplotly.png) (occorre installare il Plugin DataPlotly) tracciando un rettangolo:
 
-![](../../../imgs/cap_15/img_010.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 cliccare su (4) `Setup Selected Plot` per accedere al setup del grafico:
 
-![](../../../imgs/cap_15/img_011.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 al punto (3) inserire questa espressione:
 
@@ -122,25 +122,25 @@ al punto (3) inserire questa espressione:
 contains(@atlas_geometry,point_on_surface($geometry))
 ```
 
-![](../../../imgs/cap_15/img_012.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Tabella Attributi Province
 
 Per aggiungere una tabella utilizzare l'icona ![](../../../imgs/field_calc/icon/mActionAddTable.png) e disegnare un rettangolo:
 
-![](../../../imgs/cap_15/img_013.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Etichetta Atlante
 
 Per aggiungere una etichetta utilizzare l'icona ![](../../../imgs/field_calc/icon/mActionLabel.png) e, tramite espressione, aggiungere il campo che contiene il nome della Regione corrente:
 
-![](../../../imgs/cap_15/img_014.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Etichetta statica
 
 Per aggiungere una etichetta utilizzare l'icona ![](../../../imgs/field_calc/icon/mActionLabel.png) e digitare `Regioni e Province Italiane`:
 
-![](../../../imgs/cap_15/img_015.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 Aggiungere in basso a destra una etichetta con scritto: **Realizzato con QGIS**.
 
@@ -148,7 +148,7 @@ Aggiungere in basso a destra una etichetta con scritto: **Realizzato con QGIS**.
 
 Aggiungere una immagine utilizzando l'icona ![](../../../imgs/field_calc/icon/mActionAddImage.png) e traciando un rettangolo:
 
-![](../../../imgs/cap_15/img_016.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 #### Sistemare
 
@@ -158,33 +158,33 @@ Dopo aver aggiunto tutti gli oggetti, occorre sistemare il tutto, per esempio: c
 
 Ecco una prima sistemata con l'aggiunta di guide
 
-![](../../../imgs/cap_15/img_017.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Formattare testo etichette
 
 Formattare il testo delle etichette: dimensione, colore e allineamento
 
-![](../../../imgs/cap_15/img_018.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Tabella Attributi
 
 Formattazione tabella: tipo carattere, colore, dimensione, numero campi ec...
 
-![](../../../imgs/cap_15/img_019.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 dalle proprietà `Attributi` è possibile: riordinare i campi, rinominarli, eliminarli, aggiungerli ecc...
 
-![](../../../imgs/cap_15/img_0191.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 edito l'**Aspetto** della tabella:
 
-![](../../../imgs/cap_15/img_0192.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Grafico
 
 Configurare le varie opzioni del grafico
 
-![](../../../imgs/cap_15/img_020.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Mappe
 
@@ -192,7 +192,7 @@ Configurare le varie opzioni del grafico
 
 La mappa `panoramica` Bloccare Layer e stile in modo da non modificare la visualizzazione della panoramica, questo perché il layer verrà successivamente modificato utilòizzando una tematizzazione tramite regola:
 
-![](../../../imgs/cap_15/img_021.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ###### regioni
 
@@ -202,11 +202,11 @@ Per visualizzare solo la regione corrente (e non le altre confinanti) un modo è
 "den_reg"  =  @atlas_pagename 
 ```
 
-![](../../../imgs/cap_15/img_022.png){.center-img .img-70}
+![](../../../imgs/evolution.png){.center-img .img-70}
 
 ecco cosa accade nel layout:
 
-![](../../../imgs/cap_15/img_023.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ###### province
 
@@ -216,35 +216,35 @@ Per visualizzare solo le province della regione corrente (e non le altre confina
 contains(@atlas_geometry,point_on_surface($geometry))
 ```
 
-![](../../../imgs/cap_15/img_024.png){.center-img .img-70}
+![](../../../imgs/evolution.png){.center-img .img-70}
 
 ecco cosa accade nel layout:
 
-![](../../../imgs/cap_15/img_025.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ##### Numero pagina Atlante
 
 Aggingere numero pagina e il totale delle pagine (sono due variabili):
 
-![](../../../imgs/cap_15/img_026.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 ### Esportazione
 
 Per esportare il PDF singolo della pagina corrente, pigiare l'icona ![](../../../imgs/field_calc/icon/mActionSaveAsPDF.png):
 
-![](../../../imgs/cap_15/img_027.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 per esportare file singolo PDF dell'atlante:
 
-![](../../../imgs/cap_15/img_028.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 per esportare tanti file PDF quanti sono le pagine dell'atlante, togliere la spunta all'opzione `Esporta file singolo se possibile` e configurare `Espressione del nome di file in uscita` usando anche il costruttore di espressioni:
 
-![](../../../imgs/cap_15/img_029.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
-![](../../../imgs/cap_15/img_0271.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
-![](../../../imgs/cap_15/img_030.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 per maggiori dettagli, la guida ufficiale di QGIS:<br> <https:/docs.qgis.org/testing/en/docs/user_manual/print_composer/create_output.html#export-as-pdf>
 
@@ -254,11 +254,11 @@ per maggiori dettagli, la guida ufficiale di QGIS:<br> <https:/docs.qgis.org/tes
 
 Visualizzare, aumentando lo spessore linea, il confine della regione corrente nella mappa `province`, questo si realizza tramite il `generatore di geometrie`:
 
-![](../../../imgs/cap_15/img_031.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 risultato:
 
-![](../../../imgs/cap_15/img_032.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 #### Colore Bar Plot
 
@@ -268,7 +268,7 @@ Modificare colore delle barre del grafico Bar Plot:
 array_foreach(generate_series( 0, 1.01, 1/9 ),  ramp_color( 'Spectral', @element))
 ```
 
-![](../../../imgs/cap_15/img_033.png){.center-img .img-90}
+![](../../../imgs/evolution.png){.center-img .img-90}
 
 #### Colori categorizzati Bar Plot
 
