@@ -23,31 +23,14 @@ Realizzare un **atlante** utilizzando come layer di copertura il vettore **regio
 
 ## Cosa occorre
 
-Per realizzare l'atlante descritto sopra occorre, oltre a [**QGIS**](https:/qgis.org/it/site/), il plugin [**DataPlotly**](https:/plugins.qgis.org/plugins/DataPlotly/) che va installato (menu _Plugins_ | _Gestisci ed Installa Plugin..._), i **CONFINI DELLE UNITÀ AMMINISTRATIVE A FINI STATISTICI AL 1° GENNAIO 2024** (che trovi nella sezione [Dati](../../dati/index.md))
-
-!!! Tip "Suggerimento"
-
-    Creare un nuovo geopackage e importare i due shapefile `Reg01012020_g_WGS84` e `ProvCM01012020_g_WGS84`, inoltre, salvare il progetto QGIS dentro lo stesso geopackage.
-
 ## Iniziamo
 
 ### Importare dati
 
-Importare in QGIS i due layer `Reg01012020_g_WGS84` e `ProvCM01012020_g_WGS84`
-
-![](../../imgs/cap_15/img_01.png)
-
 ### Creare relazione 
-
-Creare relazione[^1] 1:m tra i due layer
-
-![](../../imgs/cap_15/img_02.png)
 
 ### Aggiungere viste
 
-Aggiungo due viste per utilizzarle successivamente nell'atlante: **regioni**, **province**
-
-![](../../imgs/cap_15/img_03.png)
 
 ### Nuovo Layout di stampa
 
@@ -159,39 +142,16 @@ Aggiungo due viste per utilizzarle successivamente nell'atlante: **regioni**, **
 
 ### Sistemare
 
-Dopo aver aggiunto tutti gli oggetti, occorre sistemare il tutto, per esempio: centrare e formattare meglio le etichette; sistemare meglio le varie mappe; formattare meglio la tabella attributi ecc...
+
 
 #### Guide orizzontali e verticali
 
-Ecco una prima sistemata con l'aggiunta di guide
-
-![](../../imgs/cap_15/img_017.png)
-
 #### Formattare testo etichette
-
-Formattare il testo delle etichette: dimensione, colore e allineamento
-
-![](../../imgs/cap_15/img_018.png)
 
 #### Tabella Attributi
 
-Formattazione tabella: tipo carattere, colore, dimensione, numero campi ec...
-
-![](../../imgs/cap_15/img_019.png)
-
-dalle proprietà `Attributi` è possibile: riordinare i campi, rinominarli, eliminarli, aggiungerli ecc...
-
-![](../../imgs/cap_15/img_0191.png)
-
-edito l'**Aspetto** della tabella:
-
-![](../../imgs/cap_15/img_0192.png)
-
 #### Grafico
 
-Configurare le varie opzioni del grafico
-
-![](../../imgs/cap_15/img_020.png)
 
 #### Mappe
 
@@ -239,45 +199,12 @@ Configurare le varie opzioni del grafico
 
 ## Esportazione
 
-Per esportare il PDF singolo della pagina corrente, pigiare l'icona ![](../../imgs/field_calc/icon/mActionSaveAsPDF.png):
-
-![](../../imgs/cap_15/img_027.png)
-
-per esportare file singolo PDF dell'atlante:
-
-![](../../imgs/cap_15/img_028.png)
-
-per esportare tanti file PDF quanti sono le pagine dell'atlante, togliere la spunta all'opzione `Esporta file singolo se possibile` e configurare `Espressione del nome di file in uscita` usando anche il costruttore di espressioni:
-
-![](../../imgs/cap_15/img_029.png)
-
-![](../../imgs/cap_15/img_0271.png)
-
-![](../../imgs/cap_15/img_030.png)
-
-per maggiori dettagli, la guida ufficiale di QGIS:<br> <https:/docs.qgis.org/testing/en/docs/user_manual/print_composer/create_output.html#export-as-pdf>
-
 ## Avanzato
 
 ### Generatore di geometrie
 
-Visualizzare, aumentando lo spessore linea, il confine della regione corrente nella mappa `province`, questo si realizza tramite il `generatore di geometrie`:
-
-![](../../imgs/cap_15/img_031.png)
-
-risultato:
-
-![](../../imgs/cap_15/img_032.png)
-
 ### Colore Bar Plot
 
-Modificare colore delle barre del grafico Bar Plot:
-
-```py
-array_foreach(generate_series( 0, 1.01, 1/9 ),  ramp_color( 'Spectral', @element))
-```
-
-![](../../imgs/cap_15/img_033.png)
 
 ### Colori categorizzati Bar Plot
 
