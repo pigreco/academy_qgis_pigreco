@@ -136,11 +136,11 @@ gantt
 
 L'elenco dei partecipanti viene definito in fase di iscrizione. La tabella seguente è un modello di riferimento.
 
-| Nro | Foto | Nome | Cognome | Categoria | Sesso | Corso Base | Corso Avanzato |
-| --- | ---- | ---- | ------- | --------- | ----- | ---------- | --------------- |
-| 1 |  | Nome | Cognome | | | | |
-| 2 |  | Nome | Cognome | | | | |
-| 3 |  | Nome | Cognome | | | | |
+| Nro | Foto | Nome | Cognome |  Corso Base | Corso Avanzato |
+| --- | ---- | ---- | ------- | ---------- | --------------- |
+| 1 |  | Nome | Cognome | | | 
+| 2 |  | Nome | Cognome | | | 
+| 3 |  | Nome | Cognome | | | 
 
 
 ## Piattaforme e Software

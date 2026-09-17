@@ -1,5 +1,11 @@
 # Academy QGIS by pigreco
 
+![Visite](https://visitor-badge.laobi.icu/badge?page_id=pigreco.academy_qgis_pigreco)
+[![QGIS Certified Trainer](https://img.shields.io/badge/QGIS-Certified%20Trainer-589632?logo=qgis&logoColor=white)](https://certification.qgis.org/en/)
+[![QGIS Sponsor](https://img.shields.io/badge/QGIS-Sponsor-589632?logo=qgis&logoColor=white)](https://www.qgis.org/community/contributors/supporting/#:~:text=Salvatore%20Fiandaca)
+[![OSGeo Member](https://img.shields.io/badge/OSGeo-Member-6b8e23?logo=osgeo&logoColor=white)](https://www.osgeo.org/)
+[![GFOSS.it Socio](https://img.shields.io/badge/GFOSS.it-Socio-orange)](https://www.gfoss.it/)
+
 > ⚠️ **Nota**: questo repository è **solo un esempio dimostrativo** di come utilizzare
 > [**Material for MkDocs**](https://squidfunk.github.io/mkdocs-material/) per realizzare
 > un sito di documentazione. Non è un corso ufficiale né materiale di produzione.
